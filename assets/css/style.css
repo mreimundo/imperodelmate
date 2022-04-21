@@ -54,10 +54,12 @@ ul li a:hover {
     color: darkgreen;
 }
 
+
 header h1 {
     position: absolute;
     left: 5em;
 }
+
 
 .contenidoIndex {
     width: 100%;
@@ -84,11 +86,13 @@ header h1 {
     padding-bottom: 5.5em;
     font-size: 3em;
     font-family: 'Roboto Slab', serif !important;
+    animation: aparicion 1.5s;
 }
 .textoIndex p {
     font-size: 1.5em;
     padding-bottom: 0.7em;
     font-family: 'Roboto Slab', serif;
+    animation: aparicion 1.5s;
 }
 
 .textoIndex a {
@@ -102,7 +106,8 @@ header h1 {
     color: black;
     background-color: rgba(198,238,186, 0.75);
     font-family: 'Roboto Slab', serif;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+    animation: aparicion 2s; 
 }
 
 .textoIndex a:hover {
@@ -145,16 +150,19 @@ footer .redes img:hover {
 
 .tituloProductos h2 {
     font-size: 2.5em;
+    animation: aparicion 1s;
 }
 
 .barraProductos p {
     padding: 0.5em;
+    animation: aparicion 2.5s;
 }
 
 .barraProductos input {
     border: 0.1em solid black;
     border-radius: 0.5em;
     padding: 0.3em;
+    animation: aparicion 2.5s;
 }
 
 .productos {
@@ -175,6 +183,7 @@ footer .redes img:hover {
 
 .productos .tarjetaProductos {
     transition: all 0.3s ease;
+    animation: aparicion 3s;
 }
 
 .productos .tarjetaProductos:hover {
@@ -218,12 +227,14 @@ footer .redes img:hover {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    animation: aparicion 2s;
 }
 
 
 .recomendaciones h2 {
     font-size: 2.5em;
     padding-bottom: 2em;
+    animation: aparicion 1s;
 }
 
 
@@ -263,6 +274,7 @@ footer .redes img:hover {
 .descripcionVideo .ultimaLinea {
     padding-bottom: 3em;
 }
+
 .nosotros {
     display: grid;
 }
@@ -271,6 +283,19 @@ footer .redes img:hover {
     font-size: 2.5em;
     padding: 2.5em 0;
     margin: 0 auto;
+    animation: aparicion 1s;
+}
+
+#gianmarco {
+    animation: aparicion 1.5s;
+}
+
+#lorenzo {
+    animation: aparicion 2.5s;
+}
+
+#diego {
+    animation: aparicion 3.5s;
 }
 
 .imagenesNosotros {
@@ -302,6 +327,7 @@ footer .redes img:hover {
     align-items: center;
     flex-direction: column;
     padding-bottom: 3em;
+    animation: aparicion 4s;
 }
 
 .descripcionNosotros p {
@@ -324,6 +350,7 @@ footer .redes img:hover {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 0.5em;
+    animation: aparicion 2.5s;
 }
 
 .contacto h2 {
@@ -331,6 +358,7 @@ footer .redes img:hover {
     text-align: center;
     margin: 0 auto;
     padding: 2em;
+    animation: aparicion 1s;
 }
 
 .formularioContacto {
@@ -375,6 +403,17 @@ footer .redes img:hover {
     height: 21.75em;
     width: 40em;
     border: 3px solid black;
+}
+
+
+@keyframes aparicion {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 

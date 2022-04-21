@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', serif;
+    font-family: 'Roboto Condensed', serif; 
 }
 
 #logo {
@@ -54,10 +54,6 @@ ul li a:hover {
     color: darkgreen;
 }
 
-header nav {
-    padding-left: 56.25em;
-}
-
 header h1 {
     position: absolute;
     left: 5em;
@@ -87,7 +83,7 @@ header h1 {
 .textoIndex h2 {
     padding-bottom: 5.5em;
     font-size: 3em;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif !important;
 }
 .textoIndex p {
     font-size: 1.5em;
@@ -161,11 +157,20 @@ footer .redes img:hover {
     padding: 0.3em;
 }
 
+.productos {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .tarjetaProductos {
     height: 30em;
-    width: 100%;
+    width: 20em;
     text-align: center;
+    padding: 1em;
 }
 
 .productos .tarjetaProductos {
@@ -197,16 +202,6 @@ footer .redes img:hover {
     padding: 0.5em;
     font-size: 1em;
     background-color:rgba(193, 255, 143, 0.76);
-}
-
-.productos {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 17.5em);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-content: center;
-    gap: 5em;
 }
 
 .recomendaciones {
@@ -382,23 +377,6 @@ footer .redes img:hover {
     border: 3px solid black;
 }
 
-.containerHipervinculos {
-    width: 100%;
-    background-color:rgba(230,238,213, 0.75);
-}
-
-
-#hamburgerMenu img {
-    position: relative;
-    width: 2.25em;
-    left: 33.25em;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-#hamburgerMenu img:hover {
-    transform: rotate(90deg);
-}
 
 /*Monitor pequeño o mediano de ordenador (1440x900)*/
 
@@ -420,10 +398,6 @@ footer .redes img:hover {
     ul li {
         font-size: 0.9em;
         padding: 0.75em;
-    }
-    
-    header nav {
-        padding-left: 42.1875em;
     }
     
     header h1 {
@@ -484,8 +458,8 @@ footer .redes img:hover {
     
     
     .tarjetaProductos {
-        height: 25em;
-        width: 100%;
+        height: 22.5em;
+        width: 15em;
         text-align: center;
     }
     
@@ -509,9 +483,6 @@ footer .redes img:hover {
         font-size: 0.75em;
     }
     
-    .productos {
-        gap: 3.85em;
-    }
 
     .recomendaciones {
         padding: 1.6em 0;
@@ -649,10 +620,6 @@ footer .redes img:hover {
         padding: 0.711em;
     }
     
-    header nav {
-        padding-left: 40em;
-    }
-    
     header h1 {
         left: 3.557em;
     }
@@ -712,11 +679,13 @@ footer .redes img:hover {
     
     
     .tarjetaProductos {
-        height: 21.4em;
+        height: 21em;
+        width: 14.25em;
     }
     
+    
     .tarjetaProductos img {
-        width: 12.5em;
+        width: 13.125em;
     }
     
     .tarjetaProductos p {
@@ -869,9 +838,6 @@ footer .redes img:hover {
     #logo img {
         width: 6em;
     }
-    #hamburgerMenu img {
-        visibility: visible;
-    }
 
     .contenidoIndex {
         background-position: 75% 100%;
@@ -917,19 +883,8 @@ footer .redes img:hover {
         padding: 0 2em;
     }
 
-    header nav {
-        padding-left: 27.25em;
-        padding-top: 17.5em;
-        z-index: 1;
-    }
-
     header nav a {
         font-size: 1.25em;
-    }
-
-    .containerHipervinculos {
-        display: block;
-        text-align: center;
     }
 
     .barraProductos {
@@ -984,15 +939,6 @@ footer .redes img:hover {
         padding: 0.5em;
         font-size: 1.2em;
     }
-    
-    .productos {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
 
     .recomendaciones {
         padding: 1.5em 0;
@@ -1140,10 +1086,6 @@ footer .redes img:hover {
     #logo img {
         width: 3.125em;
     }
-    #hamburgerMenu img {
-        left: 16em;
-        width: 1.17em;
-    }
 
     .contenidoIndex {
         background-position: 78% 100%;
@@ -1183,15 +1125,8 @@ footer .redes img:hover {
         padding: 0 1em;
     }
 
-    header nav {
-        padding-left: 12em;
-        padding-top: 14.2em;
-        z-index: 1;
-    }
-
-
     header nav a {
-        font-size: 0.85em;
+        font-size: 0.7em;
     }
 
     .barraProductos {
@@ -1381,10 +1316,6 @@ footer .redes img:hover {
     #logo img {
         width: 2.67em;
     }
-    #hamburgerMenu img {
-        left: 14em;
-        width: 1em;
-    }
 
     .contenidoIndex {
         background-position: 78% 100%;
@@ -1424,14 +1355,8 @@ footer .redes img:hover {
         padding: 0 0.9em;
     }
 
-    header nav {
-        padding-left: 9.6em;
-        padding-top: 13.75em;
-        z-index: 1;
-    }
-
     header nav a {
-        font-size: 0.7265em;
+        font-size: 0.55em;
     }
 
 

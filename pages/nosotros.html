@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../assets/images/logo.jpg">
     <title>Nosotros | Impero del mate</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="menu">
         <div id="logo">
             <a href="../index.html"><img src="../assets/images/logopng.png" alt="logo"></a>
         </div>
-        <h1>Impero del Mate</h1>
-        <nav>
+        <h1 id="tituloSitio">Impero del Mate</h1>
+        <nav id="navDesktop">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./productos.html">Productos</a></li>
@@ -22,6 +23,18 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div id="navMobile" class="dropdown">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="hamburgerIcon" src="../assets/images/hamburgerMenu.png"></img>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="./recomendaciones.html">Recomendaciones</a></li>
+                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
     <main class="nosotros">
         <h2>¿Quiénes están detrás de Impero del Mate?</h2>
@@ -39,13 +52,15 @@
                 <figcaption><p>Diego Corral</p></figcaption>
             </figure>
         </div>
-        <div class="descripcionNosotros">
-            <p>Impero del mate nació por la pasión más que por trabajo.</p>
-            <p>La cultura del mate y su yerba ha arraigado en nuestra cotidianidad gracias a los lazos que el baloncesto ha creado entre nosotros y luego se ha convertido en una aventura digital entre las grandes plataformas.</p>
-            <p>Somos tres muchachos, dos italianos, uno de Bolzano y otro de Taranto, y un argentino de Salliqueló en la provincia de Buenos Aires.</p>
-            <p>A partir de este año hemos decidido aunar nuestros conocimientos y habilidades para ofrecer una gama de productos que cualitativamente hablando, faltan en el mercado europeo. Por lo tanto, decidimos contactar artesanos en Argentina, cuya mano de obra supera con creces los productos promedio disponibles en las plataformas comerciales más populares, combinando una gran selección de Yerba Mate que va desde Brasil hasta Argentina. Además, complementos como estuche y bolsos no faltan y estamos muy orgullosos de poder ofrecer lo antes posible una completa selección de todo lo necesario para sumergirse en la cultura del Mate.</p>  
-            <p>La pasión y el entusiasmo por probar esta idea de trabajo son los principios que nos empujan a aprender y mejorar lo más posible porque creemos firmemente en lo que significa el mate y los beneficios que puede traer al cuerpo si se bebe diariamente.</p>
-            <p>Seguros de que sea como sea es un punto de partida y de aprendizaje, esperamos que aprecies nuestra propuesta y, por qué no, ¡te conviertas en un asiduo y satisfecho bebedor de mate!</p> 
+        <div class="container-fluid">
+            <div class="descripcionNosotros row w-100 col-xl-8 col-sm-12 col-xs-12 text-center">
+                <p>Impero del mate nació por la pasión más que por trabajo.</p>
+                <p>La cultura del mate y su yerba han arraigado en nuestra cotidianidad gracias a los lazos que el baloncesto ha creado entre nosotros y luego se ha convertido en una aventura digital entre las grandes plataformas.</p>
+                <p>Somos tres muchachos, dos italianos, uno de Bolzano y otro de Taranto, y un argentino de Salliqueló en la provincia de Buenos Aires.</p>
+                <p>A partir de este año hemos decidido aunar nuestros conocimientos y habilidades para ofrecer una gama de productos que cualitativamente hablando, faltan en el mercado europeo. Por lo tanto, decidimos contactar artesanos en Argentina, cuya mano de obra supera con creces los productos promedio disponibles en las plataformas comerciales más populares, combinando una gran selección de Yerba Mate que va desde Brasil hasta Argentina. Además, complementos como estuche y bolsos no faltan y estamos muy orgullosos de poder ofrecer lo antes posible una completa selección de todo lo necesario para sumergirse en la cultura del Mate.</p>  
+                <p>La pasión y el entusiasmo por probar esta idea de trabajo son los principios que nos empujan a aprender y mejorar lo más posible porque creemos firmemente en lo que significa el mate y los beneficios que puede traer al cuerpo si se bebe diariamente.</p>
+                <p>Seguros de que sea como sea es un punto de partida y de aprendizaje, esperamos que aprecies nuestra propuesta y, por qué no, ¡te conviertas en un asiduo y satisfecho bebedor de mate!</p> 
+            </div>
         </div>
     </main>
     <footer>
@@ -60,5 +75,6 @@
             <a href="https://www.youtube.com/channel/UCxjgkZ4z_zMzaiaNDx10WMg" target="_blank"><img src="../assets/images/iconoYoutube.png" alt="youtube"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

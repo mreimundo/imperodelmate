@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>Contacto | Impero del mate</title>
     <link rel="shortcut icon" href="../assets/images/logo.jpg">
-    <link rel="stylesheet" href="../assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="menu">
         <div id="logo">
             <a href="../index.html"><img src="../assets/images/logopng.png" alt="logo"></a>
         </div>
-        <h1>Impero del Mate</h1>
-        <nav>
+        <h1 id="tituloSitio">Impero del Mate</h1>
+        <nav id="navDesktop">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./productos.html">Productos</a></li>
@@ -22,27 +23,56 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div id="navMobile" class="dropdown">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="hamburgerIcon" src="../assets/images/hamburgerMenu.png"></img>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="./recomendaciones.html">Recomendaciones</a></li>
+                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
     <main class="contacto">
         <h2>Dejanos tu información o buscanos</h2>
         <div class="informacionContacto">
-            <form class="formularioContacto">
+            <form class="formularioContacto container-fluid text-center w-50">
                 <fieldset>
-                    <legend>Contactanos</legend>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre"/>
-                    <label>Apellido</label>
-                    <input type="text" placeholder="Ingrese su apellido"/>
-                    <label>E-mail</label>
-                    <input type="email" placeholder="example@gmail.com"/>
-                    <label><input type="checkbox" value="tyc">Acepto los términos y condiciones</label>
-                    <label><input type="checkbox" value="newsletter">Quiero suscribirme al Newsletter</label>
-                    <input class="botonesFormulario" type="reset" value="Limpiar">
-                    <input class="botonesFormulario" type="submit" value="Enviar">
-                    <div class="espaciado"></div>
+                    <legend>Contacto</legend>
+                    <div class="form-group row nombreContacto">
+                        <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" id="inputName">
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputSurname" class="col-sm-2 col-form-label">Apellido</label>
+                        <input type="text" class="form-control" id="inputSurname" placeholder="Apellido">
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                    <div class="checkboxesFormulario">
+                        <div class="form-check form-check-inline check1">
+                            <label class="form-check-label" for="inlineCheckbox1">Acepto los terminos y condiciones</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            </div>
+                            <div class="form-check form-check-inline check2">
+                                <label class="form-check-label" for="inlineCheckbox2">Quiero suscribirme al Newsletter</label>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            </div>
+                        </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10 botonesFormulario">
+                            <button type="reset" class="btn btn-primary botonesFormulario">Limpiar</button>
+                            <button type="submit" class="btn btn-primary botonesFormulario">Enviar</button>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
-            <div class="mapaContacto">
+            <div class="mapaContacto container-fluid w-50 d-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.594849553793!2d-58.40117934867956!3d-34.61440516547567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae6664c386f%3A0xfbb091ed2aa8b1a5!2sBelgrano%202288%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649257962668!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -59,5 +89,6 @@
             <a href="https://www.youtube.com/channel/UCxjgkZ4z_zMzaiaNDx10WMg" target="_blank"><img src="../assets/images/iconoYoutube.png" alt="youtube"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

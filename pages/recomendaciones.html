@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../assets/images/logo.jpg">
     <title>Recomendaciones | Impero del mate</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="menu">
         <div id="logo">
             <a href="../index.html"><img src="../assets/images/logopng.png" alt="logo"></a>
         </div>
-        <h1>Impero del Mate</h1>
-        <nav>
+        <h1 id="tituloSitio">Impero del Mate</h1>
+        <nav id="navDesktop">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./productos.html">Productos</a></li>
@@ -22,33 +23,65 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div id="navMobile" class="dropdown">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img id="hamburgerIcon" src="../assets/images/hamburgerMenu.png"></img>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="./recomendaciones.html">Recomendaciones</a></li>
+                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
-    <main class="recomendaciones">
-        <h2>¡Nuestras sugerencias, en texto y video!</h2>
+    <main class="container-fluid">
+        <div class="row">
+            <h2 class="text-center">¡Nuestras sugerencias, en texto y video!</h2>
+        </div>
         <div class="itemRecomendaciones">
-            <p class="numero">1</p>
-            <p class="textoNumero">Antes que nada, debemos saber como curar un mate:</p>
-            <iframe src="https://www.youtube.com/embed/B5KmUgxFRu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="descripcionVideo">
-                <p>Para empezar se muestra en el video el antes y el después de curar el mate y su diferencia. Ahora sí, vamos con los pasos:</p>
-                <div class="descripcionVideo">
-                    <p>1: Rellena el mate con yerba húmeda, de lo posible usada</p>
-                    <p>2: Para la primera vez, añade agua caliente</p>
-                    <p>3: Pasadas las 24hs se cambia la yerba</p>
-                    <p class="ultimaLinea">4: Se repiten los pasos anteriores hasta que la calabaza tenga un color uniforme.</p>
+            <div class="row">
+                <p class="numero text-center">1</p>
+            </div>
+            <div class="row">
+                <p class="textoNumero text-center">Antes que nada, debemos saber como curar un mate:</p>
+            </div>
+            <div class="row">
+                <iframe src="https://www.youtube.com/embed/B5KmUgxFRu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+            <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
+                <p class="text-center">Para empezar se muestra en el video el antes y el después de curar el mate y su diferencia. Ahora sí, vamos con los pasos:</p>
+                <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
+                    <div>
+                        <p>1: Rellena el mate con yerba húmeda, de lo posible usada</p>
+                        <p>2: Para la primera vez, añade agua caliente</p>
+                        <p>3: Pasadas las 24hs se cambia la yerba</p>
+                        <p>4: Se repiten los pasos anteriores hasta que la calabaza tenga un color uniforme.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="itemRecomendaciones">
-            <p class="numero">2</p>
-            <p class="textoNumero">El primer paso para preparar un buen mate es saber cómo hacerlo... Aprendé como mirando este video:</p>
-            <iframe src="https://www.youtube.com/embed/q9e6pNKYRVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="descripcionVideo">
-                <p>1: Agrega la yerba rellenando el mate hasta 3/4 de su capacidad</p>
-                <p>2: Agita el mate de un lado para repartir la yerba</p>
-                <p>3: Vierte un poco de agua en el lado vacío e inserta la bombilla</p>
-                <p class="ultimaLinea">4: Completa la preparación echando más agua casi hasta el borde</p>
+            <div class="row">
+                <p class="numero text-center">2</p>
             </div>
-        </div>
+            <div class="row">
+                <p class="textoNumero text-center">Lo más importante para preparar un buen mate es saber cómo hacerlo... Aprendé como mirando este video:</p>
+            </div>
+            <div class="row">
+                <iframe src="https://www.youtube.com/embed/q9e6pNKYRVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+            <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
+                <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
+                    <div>
+                        <p>1: Agrega la yerba rellenando el mate hasta 3/4 de su capacidad</p>
+                        <p>2: Agita el mate de un lado para repartir la yerba</p>
+                        <p>3: Vierte un poco de agua en el lado vacío e inserta la bombilla</p>
+                        <p>4: Completa la preparación echando más agua casi hasta el borde</p>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <h4>Impero del mate</h4>
@@ -62,5 +95,6 @@
             <a href="https://www.youtube.com/channel/UCxjgkZ4z_zMzaiaNDx10WMg" target="_blank"><img src="../assets/images/iconoYoutube.png" alt="youtube"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

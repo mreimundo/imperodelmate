@@ -22,6 +22,13 @@
     width: 100%;
 }
 
+#tituloSitio {
+    position: absolute;
+    left: 5em;
+    font-family: 'Roboto Condensed', serif !important;
+    font-weight: bold;
+    font-size: 2em;
+}
 
 .menu{
     background-color: #E6EED5;
@@ -55,11 +62,17 @@ ul li a:hover {
 }
 
 
-header h1 {
-    position: absolute;
-    left: 5em;
+#navMobile {
+    display: none;
 }
 
+.bg-light {
+    background-color: #E6EED5 !important;
+}
+
+.container-fluid {
+    background-color: #E6EED5;
+}
 
 .contenidoIndex {
     width: 100%;
@@ -83,7 +96,7 @@ header h1 {
 }
 
 .textoIndex h2 {
-    padding-bottom: 5.5em;
+    padding-bottom: 5.5em !important;
     font-size: 3em;
     font-family: 'Roboto Slab', serif !important;
     animation: aparicion 1.5s;
@@ -126,12 +139,12 @@ footer {
 
 footer .redes img {
     padding: 0.5em;
-    width: 1.9em;
+    width: 3em;
     transition: all 0.3s ease;
 }
 
 footer .redes img:hover {
-    width: 2em;
+    width: 3.2em;
 }
 
 .barraProductos {
@@ -158,11 +171,23 @@ footer .redes img:hover {
     animation: aparicion 2.5s;
 }
 
+.barraProductos form {
+    width: 15em;
+    justify-self: center;
+    margin: 0 auto;
+    animation: aparicion 2.5s;
+}
+
 .barraProductos input {
     border: 0.1em solid black;
     border-radius: 0.5em;
     padding: 0.3em;
-    animation: aparicion 2.5s;
+    margin: 1em 0;
+}
+
+.btn-outline-success:hover {
+    background-color: #d5efc1;
+    color:black;
 }
 
 .productos {
@@ -175,9 +200,10 @@ footer .redes img:hover {
 }
 
 .tarjetaProductos {
-    height: 30em;
+    height: 35em;
     width: 20em;
     text-align: center;
+    margin: 1em;
     padding: 1em;
 }
 
@@ -213,14 +239,10 @@ footer .redes img:hover {
     background-color:rgba(193, 255, 143, 0.76);
 }
 
-.recomendaciones {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding: 2em 0;
+.container-fluid {
+    background-color: white !important;
 }
+
 .itemRecomendaciones {
     display: flex;
     width: 100%;
@@ -231,9 +253,9 @@ footer .redes img:hover {
 }
 
 
-.recomendaciones h2 {
+.container-fluid h2 {
     font-size: 2.5em;
-    padding-bottom: 2em;
+    padding: 2em 0;
     animation: aparicion 1s;
 }
 
@@ -242,37 +264,39 @@ footer .redes img:hover {
     font-size: 2em;
     border: 2px solid white;
     border-radius: 100%;
-    padding: 0.2em 0.5em;
+    padding: 0 0.5em;
     background-color: rgba(198,238,186, 0.75);
 }
 
-.recomendaciones .textoNumero {
+.itemRecomendaciones .textoNumero {
     font-size: 1.5em;
     padding: 2em;
 }
 
-.recomendaciones iframe {
+.itemRecomendaciones iframe {
     height: 25em;
     width: 40em;
 }
 
 .descripcionVideo {
-    padding-top: 1.5em;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
 }
-
 
 .descripcionVideo p {
     font-size: 1.2em;
     padding: 0.25em;
-    text-align: center;
+    margin: 0 auto;
 }
 
-.descripcionVideo .ultimaLinea {
-    padding-bottom: 3em;
+.descripcionVideo div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .nosotros {
@@ -333,7 +357,6 @@ footer .redes img:hover {
 .descripcionNosotros p {
     font-size: 1.3em;
     padding: 0.2em;
-    text-align: center
 }
 
 
@@ -349,7 +372,7 @@ footer .redes img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0.5em;
+    padding: 5em;
     animation: aparicion 2.5s;
 }
 
@@ -362,48 +385,77 @@ footer .redes img:hover {
 }
 
 .formularioContacto {
-    width: 50%;
-    display: flex;
-    padding: 2em 5em;
-    justify-content: flex-start;
-    align-items: center;
+    margin: 0 2em;
 }
 
 .formularioContacto fieldset {
     width: 40em;
-    height: 20em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    justify-items: center;
-    gap: 1em;
+    height: 30em;
     border: 3px solid black;
 }
 
 .formularioContacto fieldset legend {
     text-align: center;
+    padding: 1em 0;
     font-size: 1.5em;
 }
 
-.formularioContacto fieldset  .botonesFormulario {
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: rgb(193, 255, 143);
-    padding: 0.5em;
+.formularioContacto fieldset .form-group{
+    justify-content: center;
+    padding: 1em;
 }
 
+.formularioContacto fieldset #inputName {
+    width: 10em;
+}
+
+.formularioContacto fieldset #inputSurname {
+    width: 12.5em;
+}
+
+.formularioContacto fieldset #inputEmail3 {
+    width: 15em;
+}
+
+.formularioContacto fieldset .form-check {
+    justify-content: center;
+    padding: 2em;
+}
+
+.formularioContacto fieldset .checkboxesFormulario {
+    padding: 0 1.45em;
+}
+
+.formularioContacto fieldset  .botonesFormulario {
+    margin: 0 auto;
+}
+
+.formularioContacto fieldset  .botonesFormulario button {
+    border-color: white;
+    background-color: rgb(193, 255, 143);
+    color: black;
+    padding: 0.5em;
+    transition: all 0.3s ease;
+    margin: 0 2em;
+}
+
+
+.formularioContacto fieldset  .botonesFormulario button:hover {
+    background-color: rgb(142, 214, 83);
+}
 
 .mapaContacto {
     width: 50%;
     justify-content: center;
-    padding: 5em 5em;
+    margin: 0 2em;
 }
 
 .mapaContacto iframe {
-    height: 21.75em;
     width: 40em;
+    height: 30em;
     border: 3px solid black;
 }
+
 
 
 @keyframes aparicion {
@@ -493,13 +545,19 @@ footer .redes img:hover {
     
     .barraProductos input {
         border-radius: 0.415em;
+        font-size: 0.9em;
     }
     
+    .productos {
+        width: 80%;
+        padding: 3em 0;
+    }
     
     .tarjetaProductos {
-        height: 22.5em;
+        height: 26em;
         width: 15em;
         text-align: center;
+        margin: 1.5em 0;
     }
     
     
@@ -522,46 +580,35 @@ footer .redes img:hover {
         font-size: 0.75em;
     }
     
-
-    .recomendaciones {
-        padding: 1.6em 0;
-    }
     
-    .recomendaciones h2 {
+    .container-fluid h2 {
         font-size: 2em;
-        padding-bottom: 1.6em;
+        padding: 1.5em 0;
     }
     
     
     .itemRecomendaciones .numero {
-        font-size: 1.6em;
+        font-size: 1.75em;
     }
     
-    .recomendaciones .textoNumero {
+    .itemRecomendaciones .textoNumero {
         font-size: 1.3em;
         padding: 1.6em;
     }
-    
-    .recomendaciones iframe {
-        height: 21em;
-        width: 30em;
+
+    .itemRecomendaciones iframe {
+        height: 20em;
+        width: 35em;
     }
     
     .descripcionVideo {
-        padding-top: 1.3em;
-        display: flex;
+        padding: 1.75em 0;
     }
-    
     
     .descripcionVideo p {
-        font-size: 1em;
-        padding: 0.2em;
-        text-align: center;
+        font-size: 1.1em;
     }
     
-    .descripcionVideo .ultimaLinea {
-        padding-bottom: 2.5em;
-    }
     
     .nosotros h2 {
         font-size: 2.25em;
@@ -600,38 +647,67 @@ footer .redes img:hover {
     
     .contacto h2 {
         font-size: 2.1em;
-        padding: 1.65em;
+        padding: 1.6em;
     }
     
-    .informacionContacto {
-        padding-bottom: 10.1em;
-    }
-
-    .formularioContacto {    
-        padding: 1.65em 4.3em;
+    .formularioContacto {
+        margin: 0 1.6em;
     }
     
     .formularioContacto fieldset {
-        width: 30em;
-        height: 16.7em;
-        gap: 0.75em;
+        width: 32.5em;
+        height: 27.5em;
     }
     
     .formularioContacto fieldset legend {
-        font-size: 1.125em;
-    }
-    
-    .formularioContacto fieldset  .botonesFormulario {
-        padding: 0.417em;
+        padding: 0.8em 0;
+        font-size: 1.25em;
     }
 
+    .formularioContacto fieldset label {
+        font-size: 0.85em;
+    }
+
+    .formularioContacto fieldset input {
+        font-size: 0.85em;
+    }
+    
+    .formularioContacto fieldset .form-group{
+        padding: 0.75em;
+    }
+    
+    .formularioContacto fieldset #inputName {
+        width: 7.5em;
+    }
+    
+    .formularioContacto fieldset #inputSurname {
+        width: 9em;
+    }
+    
+    .formularioContacto fieldset #inputEmail3 {
+        width: 12.5em;
+    }
+    
+    .formularioContacto fieldset .form-check {
+        padding: 1.5em;
+    }
+
+    .formularioContacto fieldset .checkboxesFormulario {
+        padding: 0 0.5em;
+    }
+    
+    .formularioContacto fieldset  .botonesFormulario button {
+        padding: 0.4em;
+        margin: 0 1.75em;
+    }
+    
     .mapaContacto {
-        padding: 4.17em 4.17em;
+        margin: 0 1.6em;
     }
     
     .mapaContacto iframe {
-        height: 18.125em;
-        width: 30em;
+        width: 32.5em;
+        height: 27.5em;
     }
     
 }
@@ -697,6 +773,10 @@ footer .redes img:hover {
         height: 8.57em;
     }
     
+    .productos {
+        width: 80%;
+        padding: 3em 0;
+    }
     
     .tituloProductos {
         height: 3.57em;
@@ -714,12 +794,14 @@ footer .redes img:hover {
     
     .barraProductos input {
         padding: 0.2em;
+        font-size: 0.71em;
     }
     
     
     .tarjetaProductos {
-        height: 21em;
+        height: 25em;
         width: 14.25em;
+        margin: 2em 0;
     }
     
     
@@ -740,49 +822,33 @@ footer .redes img:hover {
         padding: 0.357em;
         font-size: 0.71em;
     }
-    
-    .productos {
-        gap: 3.57em;
-    }
 
-    .recomendaciones {
-        padding: 1.3em 0;
-    }
-    
-    .recomendaciones h2 {
-        font-size: 1.8em;
-        padding-bottom: 1.45em;
+    .container-fluid h2 {
+        font-size: 1.75em;
+        padding: 1.4em 0;
     }
     
     
     .itemRecomendaciones .numero {
-        font-size: 1.45em;
-        padding: 0.15em 0.45em;
+        font-size: 1.4em;
     }
     
-    .recomendaciones .textoNumero {
+    .itemRecomendaciones .textoNumero {
         font-size: 1.1em;
-        padding: 1.45em;
+        padding: 1.2em;
     }
     
-    .recomendaciones iframe {
-        height: 17.85em;
-        width: 28.57em;
+    .itemRecomendaciones iframe {
+        height: 17.5em;
+        width: 32.5em;
     }
     
     .descripcionVideo {
-        padding-top: 1.1em;
+        padding: 1.4em 0;
     }
-    
     
     .descripcionVideo p {
-        font-size: 0.85em;
-        padding: 0.2em;
-        text-align: center;
-    }
-    
-    .descripcionVideo .ultimaLinea {
-        padding-bottom: 2.15em;
+        font-size: 1em;
     }
     
     .nosotros h2 {
@@ -820,44 +886,62 @@ footer .redes img:hover {
         padding: 0.142em;
     }
     
-    .informacionContacto {
-        padding-bottom: 8.3em;
-    }
     
     .contacto h2 {
-        font-size: 1.8em;
-        padding: 1.43em;
+        font-size: 1.775em;
+        padding: 1.42em;
     }
     
     .formularioContacto {
-        padding: 1.43em 3.57em;
+        margin: 0 1.42em;
     }
     
     .formularioContacto fieldset {
-        width: 28.6em;
-        height: 14.3em;
-        gap: 0.715em;
+        width: 30em;
+        height: 22.5em;
     }
     
     .formularioContacto fieldset legend {
-        font-size: 1.1em;
+        padding: 0.711em 0;
+        font-size: 1.065em;
     }
     
-    .formularioContacto label {
-        font-size: 0.9em;
+    .formularioContacto fieldset .form-group{
+        padding: 0.711em;
+    }
+    
+    .formularioContacto fieldset #inputName {
+        width: 7.11em;
+    }
+    
+    .formularioContacto fieldset #inputSurname {
+        width: 8.875em;
+    }
+    
+    .formularioContacto fieldset #inputEmail3 {
+        width: 10.665em;
+    }
+    
+    .formularioContacto fieldset .form-check {
+        padding: 0.75em;
     }
 
-    .formularioContacto fieldset  .botonesFormulario {
-        padding: 0.357em;
+    .formularioContacto fieldset .checkboxesFormulario {
+        padding: 0 0.1em;
+    }
+
+    .formularioContacto fieldset  .botonesFormulario button {
+        padding: 0.36em;
+        margin: 0 1.42em;
     }
     
     .mapaContacto {
-        padding: 3.57em 3.57em;
+        margin: 0 1.42em;
     }
     
     .mapaContacto iframe {
-        height: 15.55em;
-        width: 28.6em;
+        width: 30em;
+        height: 22.5em;
     }
 }
 
@@ -867,6 +951,10 @@ footer .redes img:hover {
 @media (max-width: 720px) {
     .menu {
         height: 6em;
+    }
+    
+    #tituloSitio {
+        left: 4em;
     }
 
     #logo {
@@ -878,16 +966,41 @@ footer .redes img:hover {
         width: 6em;
     }
 
+    #navDesktop{
+        display: none;
+    }
+
+    #navMobile {
+        display: block;
+        z-index: 1;
+    }
+
+    .btn-secondary, .btn-secondary:hover{
+        background-color: #E6EED5;
+    }
+
+    .dropdown-menu {
+        background-color: rgba(230,238,213, 0.75);
+    }
+
+    ul li a{
+        font-size: 1em;
+    }
+
+    #hamburgerIcon {
+        width: 2em;
+    }
+
     .contenidoIndex {
         background-position: 75% 100%;
         height: 82em;
     }
     .textoIndex {
-        bottom: 12.5em;
+        bottom: 7.5em;
     }
     
     .textoIndex h2 {
-        padding-bottom: 5em;
+        padding-bottom: 4em;
         font-size: 3em;
     }
     .textoIndex p {
@@ -918,7 +1031,7 @@ footer .redes img:hover {
     }
 
     footer .redes img{
-        width: 3em;
+        width: 6.5em;
         padding: 0 2em;
     }
 
@@ -946,16 +1059,22 @@ footer .redes img:hover {
     }
     
     .barraProductos input {
-        border: 0.1em solid black;
-        border-radius: 0.5em;
-        padding: 0.35em;
+        padding: 0.3em;
+        font-size: 1em;
+        width: 15em;
+        margin: 1em 0;
+    }
+
+    .barraProductos button {
+        padding: 0.75em;
+        font-size: 1em;
     }
     
     
     .tarjetaProductos {
-        height: 35em;
+        height: 42em;
         width: 25em;
-        padding-bottom: 1.5em;
+        margin-bottom: 1.5em;
     }
     
     
@@ -979,44 +1098,31 @@ footer .redes img:hover {
         font-size: 1.2em;
     }
 
-    .recomendaciones {
-        padding: 1.5em 0;
+    .container-fluid h2 {
+        font-size: 2.25em;
+        padding: 1.75em 0;
     }
-    
-    .recomendaciones h2 {
-        font-size: 2em;
-        padding: 1.7em 0;
-    }
-    
     
     .itemRecomendaciones .numero {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
     
-    .recomendaciones .textoNumero {
+    .itemRecomendaciones .textoNumero {
         font-size: 1.5em;
-        padding: 1.7em;
-        text-align: center;
+        padding: 1.75em;
     }
-
-    .recomendaciones iframe {
-        height: 29.6em;
-        width: 15em;
+    
+    .itemRecomendaciones iframe {
+        height: 30em;
+        width: 25em;
     }
     
     .descripcionVideo {
-        padding-top: 1.3em;
+        padding: 1.75em 0;
     }
-    
-    
+
     .descripcionVideo p {
-        font-size: 1em;
-        padding: 0.2em;
-        text-align: center;
-    }
-    
-    .descripcionVideo .ultimaLinea {
-        padding-bottom: 2.5em;
+        font-size: 1.25em;
     }
     
     .nosotros h2 {
@@ -1032,12 +1138,12 @@ footer .redes img:hover {
     }
     
     .imagenesNosotros img {
-        width: 25em;
+        width: 28em;
         transition: all 0.3s ease;
     }
     
     .imagenesNosotros img:hover {
-        width: 26em;
+        width: 29em;
     }
     
     .imagenesNosotros figure {
@@ -1053,55 +1159,55 @@ footer .redes img:hover {
     }
     
     .descripcionNosotros p {
-        font-size: 1.1em;
+        font-size: 1.25em;
         padding: 0.15em;
     }
     
     .informacionContacto {
-        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 3em;
     }
     
     .contacto h2 {
         font-size: 2em;
-        padding: 1.75em;
+        padding: 1.5em;
     }
-    
+
     .formularioContacto {
-        width: 100%;
-        padding: 1.5em 0em;
-        justify-content: center;
+        width: 100% !important;
+        padding: 1em 0;
     }
-    
+
     .formularioContacto fieldset {
-        width: 30em;
-        height: 21.75em;
-        display: grid;
-        justify-items: center;
-        gap: 1.5em;
+        width: 25em;
+        height: 30em;
+        margin: 0 auto;
     }
-    
+
     .formularioContacto fieldset legend {
         text-align: center;
-        font-size: 1.3em;
+        padding: 1em 0;
+        font-size: 1.5em;
     }
-    
-    .formularioContacto fieldset  .botonesFormulario {
-        padding: 0.3em;
+
+    .formularioContacto fieldset .form-group{
+        padding: 1em;
     }
-    
-    .informacionContacto {
-        padding-bottom: 2em;
+
+    .formularioContacto fieldset .form-check {
+        padding: 1em;
     }
 
     .mapaContacto {
-        width: 100%;
-        justify-content: center;
-        padding: 10em 0em;
+        width: 100% !important;
+        padding: 2em 0;
     }
     
     .mapaContacto iframe {
-        height: 21.75em;
-        width: 30em;
+        width: 25em;
+        height: 30em;
+        margin: 0 auto;
     }
 }
 
@@ -1113,8 +1219,16 @@ footer .redes img:hover {
         height: 3.125em;
     }
 
-    .menu h1 {
+    #tituloSitio {
         font-size: 1.05em;
+    }
+
+    #hamburgerIcon{
+        width: 1em;
+    }
+
+    .dropdown-menu li {
+        font-size: 0.75em;
     }
 
     #logo {
@@ -1160,7 +1274,7 @@ footer .redes img:hover {
     }
 
     footer .redes img{
-        width: 1.5625em;
+        width: 3.5em;
         padding: 0 1em;
     }
 
@@ -1189,15 +1303,22 @@ footer .redes img:hover {
     }
     
     .barraProductos input {
-        padding: 0.35em;
-        font-size: 0.75em;
+        padding: 0.3em;
+        font-size: 0.65em;
+        width: 12em;
+        margin: 0 auto;
+    }
+
+    .barraProductos button {
+        padding: 0.5em;
+        font-size: 0.65em;
     }
     
     
     .tarjetaProductos {
-        height: 20em;
+        height: 25em;
         width: 13em;
-        padding-bottom: 1em;
+        margin: 1em 0;
     }
     
     
@@ -1220,44 +1341,31 @@ footer .redes img:hover {
         font-size: 0.85em;
     }
     
-    .recomendaciones {
-        padding: 0.782em 0;
+    .container-fluid h2 {
+        font-size: 1.2em;
+        padding: 1.25em 0;
     }
-    
-    .recomendaciones h2 {
-        font-size: 1.05em;
-        padding: 0.875em 0;
-    }
-    
     
     .itemRecomendaciones .numero {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
-    .recomendaciones .textoNumero {
-        font-size: 0.8em;
-        padding: 0.9em;
-        text-align: center;
+    .itemRecomendaciones .textoNumero {
+        font-size: 0.9em;
+        padding: 1.25em;
     }
-
-    .recomendaciones iframe {
-        height: 15em;
-        width: 8em;
+    
+    .itemRecomendaciones iframe {
+        height: 17.5em;
+        width: 13.5em;
     }
     
     .descripcionVideo {
-        padding-top: 0.7em;
+        padding: 1.25em 0;
     }
-    
-    
+
     .descripcionVideo p {
-        font-size: 0.55em;
-        padding: 0.11em;
-        text-align: center;
-    }
-    
-    .descripcionVideo .ultimaLinea {
-        padding-bottom: 1.3em;
+        font-size: 0.65em;
     }
 
     .nosotros h2 {
@@ -1266,12 +1374,12 @@ footer .redes img:hover {
     }
     
     .imagenesNosotros img {
-        width: 13em;
+        width: 15em;
         transition: all 0.3s ease;
     }
     
     .imagenesNosotros img:hover {
-        width: 13.75em;
+        width: 15.5em;
     }
     
     .imagenesNosotros figure {
@@ -1283,55 +1391,87 @@ footer .redes img:hover {
     }
 
     .descripcionNosotros {
-        padding-bottom: 1.8em;
+        padding-bottom: 1.25em;
     }
     
     .descripcionNosotros p {
-        font-size: 0.58em;
-        padding: 0.08em;
-    }
-    
-    .contacto h2 {
-        font-size: 1.05em;
-        padding: 0.9em;
-    }
-    
-    .formularioContacto {
-        padding: 0.8em 0em;
-    }
-    
-    .formularioContacto fieldset {
-        width: 16em;
-        height: 12em;
-        gap: 0.8em;
-    }
-    
-    .formularioContacto fieldset legend {
         font-size: 0.7em;
-    }
-
-    .formularioContacto label {
-        font-size: 0.6em;
-    }
-
-    .formularioContacto input {
-        font-size: 0.6em;
-    }
-    .formularioContacto fieldset  .botonesFormulario {
-        padding: 0.175em;
+        padding: 0.085em;
     }
     
     .informacionContacto {
-        padding-bottom: 1.05em;
+        padding: 1.5em;
+    }
+    
+    .contacto h2 {
+        font-size: 1.2em;
+        padding: 0.75em;
+    }
+    
+    .formularioContacto {
+        margin: 0 0.75em;
+    }
+    
+    .formularioContacto fieldset {
+        width: 15em;
+        height: 22.5em;
+    }
+    
+    .formularioContacto fieldset legend {
+        padding: 0.4em 0;
+        font-size: 0.9em;
+    }
+    
+    .formularioContacto fieldset .form-group{
+        padding: 0.4em;
+    }
+    
+    .formularioContacto fieldset label {
+        font-size: 0.55em;
+    }
+
+    .formularioContacto fieldset input {
+        padding: 0.2em;
+        font-size: 0.55em;
+    }
+
+    .formularioContacto fieldset button {
+        font-size: 0.6em;
+    }
+
+    .formularioContacto fieldset #inputName {
+        width: 7em;
+    }
+    
+    .formularioContacto fieldset #inputSurname {
+        width: 8.5em;
+    }
+    
+    .formularioContacto fieldset #inputEmail3 {
+        width: 10em;
+    }
+    
+    .formularioContacto fieldset .form-check {
+        padding: 0.75em;
+    }
+    
+    .formularioContacto fieldset .checkboxesFormulario {
+        padding: 0em;
+    }
+    
+    
+    .formularioContacto fieldset  .botonesFormulario button {
+        padding: 0.2em;
     }
 
     .mapaContacto {
-        padding: 5.2em 0em;
+        width: 100% !important;
+        padding: 0.75em 0;
     }
     
     .mapaContacto iframe {
-        height: 12em;
-        width: 16em;
+        width: 15em;
+        height: 22.5em;
     }
 }
 
@@ -1340,10 +1480,9 @@ footer .redes img:hover {
 @media (max-width: 320px) {
     .menu {
         height: 2.67em;
-        
     }
 
-    .menu h1 {
+    #tituloSitio {
         font-size: 0.9em;
     }
 
@@ -1354,6 +1493,14 @@ footer .redes img:hover {
 
     #logo img {
         width: 2.67em;
+    }
+
+    #hamburgerIcon {
+        width: 0.85em;
+    }
+
+    .dropdown-menu li {
+        font-size: 0.7em;
     }
 
     .contenidoIndex {
@@ -1390,14 +1537,13 @@ footer .redes img:hover {
     }
 
     footer .redes img{
-        width: 1.335em;
+        width: 3.2em;
         padding: 0 0.9em;
     }
 
     header nav a {
         font-size: 0.55em;
     }
-
 
     .barraProductos {
         height: 7em;
@@ -1421,14 +1567,20 @@ footer .redes img:hover {
     
     .barraProductos input {
         padding: 0.3em;
-        font-size: 0.7em;
+        font-size: 0.6em;
+        width: 10em;
+        margin: 0 auto;
+    }
+
+    .barraProductos button {
+        padding: 0.5em;
+        font-size: 0.6em;
     }
     
-    
     .tarjetaProductos {
-        height: 17em;
+        height: 22em;
         width: 11em;
-        padding-bottom: 1em;
+        margin: 1em 0;
     }
     
     
@@ -1441,6 +1593,7 @@ footer .redes img:hover {
         font-size: 0.7em;
     }
     
+
     .precioProductos {
         padding-top: 0.5em;
         font-size: 1.2em;
@@ -1451,44 +1604,31 @@ footer .redes img:hover {
         font-size: 0.7em;
     }
 
-    .recomendaciones {
-        padding: 0.67em 0;
+    .container-fluid h2 {
+        font-size: 1.1em;
+        padding: 1.2em 0;
     }
-    
-    .recomendaciones h2 {
-        font-size: 0.9em;
-        padding: 0.75em 0;
-    }
-    
     
     .itemRecomendaciones .numero {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     
-    .recomendaciones .textoNumero {
-        font-size: 0.7em;
-        padding: 0.77em;
-        text-align: center;
+    .itemRecomendaciones .textoNumero {
+        font-size: 0.8em;
+        padding: 1.2em;
     }
-
-    .recomendaciones iframe {
-        height: 13em;
-        width: 7em;
+    
+    .itemRecomendaciones iframe {
+        height: 15em;
+        width: 12.5em;
     }
     
     .descripcionVideo {
-        padding-top: 0.6em;
+        padding: 1.2em 0;
     }
-    
-    
+
     .descripcionVideo p {
-        font-size: 0.47em;
-        padding: 0.10em;
-        text-align: center;
-    }
-    
-    .descripcionVideo .ultimaLinea {
-        padding-bottom: 1.15em;
+        font-size: 0.58em;
     }
 
     .nosotros h2 {
@@ -1497,12 +1637,12 @@ footer .redes img:hover {
     }
     
     .imagenesNosotros img {
-        width: 11.1em;
+        width: 12.5em;
         transition: all 0.3s ease;
     }
     
     .imagenesNosotros img:hover {
-        width: 11.4em;
+        width: 13em;
     }
     
     .imagenesNosotros figure {
@@ -1514,54 +1654,80 @@ footer .redes img:hover {
     }
 
     .descripcionNosotros {
-        padding-bottom: 1.55em;
+        padding-bottom: 1em 0;
     }
     
     .descripcionNosotros p {
-        font-size: 0.5em;
+        font-size: 0.65em;
         padding: 0.07em;
     }
 
+    .informacionContacto {
+        padding: 1.4em;
+    }
+    
     .contacto h2 {
-        font-size: 0.9em;
-        padding: 0.77em;
+        font-size: 1.1em;
+        padding: 0.65em;
     }
     
     .formularioContacto {
-        padding: 0.7em 0em;
+        margin: 0 0.65em;
     }
     
     .formularioContacto fieldset {
-        width: 13.6em;
-        height: 10.2em;
-        gap: 0.6em;
+        width: 13.5em;
+        height: 21em;
     }
     
     .formularioContacto fieldset legend {
-        font-size: 0.6em;
-    }
-
-    .formularioContacto label {
-        font-size: 0.51em;
-    }
-
-    .formularioContacto input {
-        font-size: 0.51em;
-    }
-    .formularioContacto fieldset  .botonesFormulario {
-        padding: 0.15em;
+        padding: 0.325em 0;
+        font-size: 0.8em;
     }
     
-    .informacionContacto {
-        padding-bottom: 0.9em;
+    .formularioContacto fieldset .form-group{
+        padding: 0.325em;
+    }
+    
+    .formularioContacto fieldset label {
+        font-size: 0.5em;
+    }
+
+    .formularioContacto fieldset input {
+        padding: 0.175em;
+        font-size: 0.5em;
+    }
+
+    .formularioContacto fieldset button {
+        font-size: 0.525em;
+    }
+
+    .formularioContacto fieldset #inputName {
+        width: 6em;
+    }
+    
+    .formularioContacto fieldset #inputSurname {
+        width: 7.25em;
+    }
+    
+    .formularioContacto fieldset #inputEmail3 {
+        width: 8.5em;
+    }
+    
+    .formularioContacto fieldset .form-check {
+        padding: 0.65em;
+    }
+    
+    .formularioContacto fieldset  .botonesFormulario button {
+        padding: 0.175em;
     }
 
     .mapaContacto {
-        padding: 4.45em 0em;
+        padding: 0.65em 0;
     }
     
     .mapaContacto iframe {
-        width: 13.6em;
-        height: 10.2em;
+        width: 13.5em;
+        height: 21em;
     }
 }

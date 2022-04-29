@@ -278,6 +278,12 @@ footer .redes img:hover {
     width: 40em;
 }
 
+.itemRecomendaciones #introduccionVideo {
+    padding: 1.5em 0;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
 .descripcionVideo {
     width: 100%;
     display: flex;
@@ -291,6 +297,10 @@ footer .redes img:hover {
     font-size: 1.2em;
     padding: 0.25em;
     margin: 0 auto;
+}
+
+.descripcionVideo p:last-child {
+    padding-bottom: 2em;
 }
 
 .descripcionVideo div {
@@ -346,11 +356,13 @@ footer .redes img:hover {
     text-align: center;
 }
 .descripcionNosotros {
+    width: 85% !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding-bottom: 3em;
+    margin: 0 auto;
     animation: aparicion 4s;
 }
 
@@ -601,12 +613,20 @@ footer .redes img:hover {
         width: 35em;
     }
     
+        .itemRecomendaciones #introduccionVideo {
+            padding: 1.3em 0;
+            font-size: 1.2em;
+        }
+    
     .descripcionVideo {
         padding: 1.75em 0;
     }
     
     .descripcionVideo p {
         font-size: 1.1em;
+    }
+    .descripcionVideo p:last-child {
+        padding-bottom: 1.5em;
     }
     
     
@@ -641,7 +661,7 @@ footer .redes img:hover {
     }
     
     .descripcionNosotros p {
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 0.175em;
     }
     
@@ -843,12 +863,20 @@ footer .redes img:hover {
         width: 32.5em;
     }
     
+    .itemRecomendaciones #introduccionVideo {
+        padding: 1.1em 0;
+        font-size: 1.1em;
+    }
+    
     .descripcionVideo {
         padding: 1.4em 0;
     }
     
     .descripcionVideo p {
         font-size: 1em;
+    }
+    .descripcionVideo p:last-child {
+        padding-bottom: 1.4em;
     }
     
     .nosotros h2 {
@@ -1117,12 +1145,21 @@ footer .redes img:hover {
         width: 25em;
     }
     
+    .itemRecomendaciones #introduccionVideo {
+        padding: 1.2em 0;
+        font-size: 1.3em;
+    }
+
     .descripcionVideo {
-        padding: 1.75em 0;
+        padding: 1.4em 0;
     }
 
     .descripcionVideo p {
         font-size: 1.25em;
+    }
+    .descripcionVideo p:last-child {
+        padding-bottom: 2.25em;
+        text-align: center;
     }
     
     .nosotros h2 {
@@ -1360,12 +1397,21 @@ footer .redes img:hover {
         width: 13.5em;
     }
     
+    
+    .itemRecomendaciones #introduccionVideo {
+        padding: 0.75em 0;
+        font-size: 0.8em;
+    }
     .descripcionVideo {
-        padding: 1.25em 0;
+        padding: 0.5em;
+        margin: 0 auto;
     }
 
     .descripcionVideo p {
         font-size: 0.65em;
+    }
+    .descripcionVideo p:last-child {
+        padding-bottom: 1.75em;
     }
 
     .nosotros h2 {
@@ -1623,12 +1669,22 @@ footer .redes img:hover {
         width: 12.5em;
     }
     
+    .itemRecomendaciones #introduccionVideo {
+        padding: 0.75em 0;
+        font-size: 0.72em;
+    }
+
     .descripcionVideo {
-        padding: 1.2em 0;
+        padding: 0.25em 0;
+        margin: 0 auto;
     }
 
     .descripcionVideo p {
         font-size: 0.58em;
+    }
+
+    .descripcionVideo p:last-child {
+        padding-bottom: 1.6em;
     }
 
     .nosotros h2 {

@@ -1,0 +1,240 @@
+.itemRecomendaciones {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    animation: aparicion 2s;
+
+    .numero {
+        font-size: 2em;
+        border: 2px solid $colorBlanco;
+        border-radius: 100%;
+        padding: 0 0.5em;
+        background-color: $colorNumeroOpaco;
+    }
+
+    .textoNumero {
+        font-size: 1.5em;
+        padding: 2em;
+    }
+
+    iframe {
+        height: 25em;
+        width: 40em;
+    }
+
+    #introduccionVideo {
+        padding: 1.5em 0;
+        font-size: 1.3em;
+        font-style: italic;
+    }
+} 
+
+
+.descripcionVideo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+
+    p {
+        font-size: 1.2em;
+        padding: 0.25em;
+        margin: 0 auto;
+    }
+
+    p:last-child {
+        padding-bottom: 2em;
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .itemRecomendaciones {
+        .numero {
+            font-size: 1.75em;
+        }
+
+        .textoNumero {
+            font-size: 1.3em;
+            padding: 1.6em;
+        }
+
+        iframe {
+            height: 20em;
+            width: 35em;
+        }
+
+        #introduccionVideo {
+            padding: 1.3em 0;
+            font-size: 1.2em;
+        }
+    }
+    
+    
+    .descripcionVideo {
+        padding: 1.75em 0;
+        p {
+            font-size: 1.1em;
+        }
+
+        p:last-child {
+            padding-bottom: 1.5em;
+        }
+    }
+    
+}
+
+@media (max-width: 1366px) {
+    .itemRecomendaciones {
+        .numero {
+            font-size: 1.4em;
+        }
+
+        .textoNumero {
+            font-size: 1.1em;
+            padding: 1.2em;
+        }
+
+        iframe {
+            height: 17.5em;
+            width: 32.5em;
+        }
+
+        #introduccionVideo {
+            padding: 1.1em 0;
+            font-size: 1.1em;
+        }
+    } 
+    
+    .descripcionVideo {
+        padding: 1.4em 0;
+
+        p {
+            font-size: 1em;
+        }
+
+        p:last-child {
+            padding-bottom: 1.4em;
+        }
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .itemRecomendaciones {
+        .numero {
+            font-size: 1.75em;
+        }
+
+        .textoNumero {
+            font-size: 1.5em;
+            padding: 1.75em;
+        }
+
+        iframe {
+            height: 30em;
+            width: 25em;
+        }
+
+        #introduccionVideo {
+            padding: 1.2em 0;
+            font-size: 1.3em;
+        }
+    }
+
+    .descripcionVideo {
+        padding: 1.4em 0;
+
+        p {
+            font-size: 1.25em;
+        }
+
+        p:last-child {
+            padding-bottom: 2.25em;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .itemRecomendaciones{
+        .numero {
+            font-size: 1em;
+        }
+
+        .textoNumero {
+            font-size: 0.9em;
+            padding: 1.25em;
+        }
+
+        iframe {
+            height: 17.5em;
+            width: 13.5em;
+        }
+
+        #introduccionVideo {
+            padding: 0.75em 0;
+            font-size: 0.8em;
+        }
+    }
+
+    .descripcionVideo {
+        padding: 0.5em;
+        margin: 0 auto;
+
+        p {
+            font-size: 0.65em;
+        }
+
+        p:last-child {
+            padding-bottom: 1.75em;
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .itemRecomendaciones {
+        .numero {
+            font-size: 0.9em;
+        }
+
+        .textoNumero {
+            font-size: 0.8em;
+            padding: 1.2em;
+        }
+
+        iframe {
+            height: 15em;
+            width: 12.5em;
+        }
+
+        #introduccionVideo {
+            padding: 0.75em 0;
+            font-size: 0.72em;
+        }
+    }
+
+    .descripcionVideo {
+        padding: 0.25em 0;
+        margin: 0 auto;
+        
+        p {
+            font-size: 0.58em;
+        }
+
+        p:last-child {
+            padding-bottom: 1.6em;
+        }
+    }
+}

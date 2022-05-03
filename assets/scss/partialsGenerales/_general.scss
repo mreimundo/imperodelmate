@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Mali&family=PT+Sans&family=Roboto+Condensed&family=Roboto+Slab&family=Vollkorn&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', serif; 
+}
+
+.bg-light {
+    background-color: $colorPrincipal1 !important;
+}
+
+.container-fluid {
+    background-color: $colorBlanco !important;
+    h2 {
+        font-size: 2.5em;
+        padding: 2em 0;
+        animation: aparicion 1s;
+    }
+}
+
+.btn-outline-success:hover {
+    background-color: $colorPrincipal2;
+    color: $colorNegro;
+}
+
+@keyframes aparicion {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1440px) {
+
+    .container-fluid {
+        h2 {
+            font-size: 2em;
+            padding: 1.5em 0;
+        }
+    }
+
+}
+
+@media (max-width: 1366px) {
+
+    .container-fluid {
+        h2 {
+            font-size: 1.75em;
+            padding: 1.4em 0;
+        }
+    }
+
+}
+
+@media (max-width: 720px) {
+    .btn-secondary, .btn-secondary:hover{
+        background-color: $colorPrincipal1;
+    }
+
+    .dropdown-menu {
+        background-color: $colorPrincipalOpaco;
+    }
+
+    .container-fluid {
+        h2 {
+            font-size: 2.25em;
+            padding: 1.75em 0;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .dropdown-menu {
+        li {
+            font-size: 0.75em;
+        }
+    }
+
+    .container-fluid {
+        h2{
+            font-size: 1.2em;
+            padding: 1.25em 0;
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+    .dropdown-menu {
+        li {
+            font-size: 0.7em;
+        }
+    }
+
+    .container-fluid {
+        h2 {
+            font-size: 1.1em;
+            padding: 1.2em 0;
+        }
+    }
+}

@@ -1,0 +1,440 @@
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2em;
+        animation: aparicion 1s;
+    }
+}
+
+.informacionContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5em;
+    animation: aparicion 2.5s;
+}
+
+.formularioContacto {
+    margin: 0 2em;
+}
+
+.formularioContacto {
+    fieldset {
+        width: 40em;
+        height: 30em;
+        border: 3px solid $colorNegro;
+
+        legend {
+            text-align: center;
+            padding: 1em 0;
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            justify-content: center;
+            padding: 1em;
+        }
+
+        #inputName {
+            width: 10em;
+        }
+
+        #inputSurname {
+            width: 12.5em;
+        }
+
+        #inputEmail3 {
+            width: 15em;
+        }
+
+        .form-check {
+            justify-content: center;
+            padding: 2em;
+        }
+
+        .checkboxesFormulario {
+            padding: 0 1.45em;
+        }
+
+        .botonesFormulario {
+            margin: 0 auto;
+
+            button {
+                border-color: $colorBlanco;
+                background-color: $colorBotones;
+                color: $colorNegro;
+                padding: 0.5em;
+                transition: all 0.3s ease;
+                margin: 0 2em;
+            }
+
+            button:hover {
+                background-color: $colorBotonesOscuro;
+            }
+        }
+
+    }
+}
+
+.mapaContacto {
+    width: 50%;
+    justify-content: center;
+    margin: 0 2em;
+
+    iframe {
+        width: 40em;
+        height: 30em;
+        border: 3px solid $colorNegro;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .contacto {
+        h2 {
+            font-size: 2.1em;
+            padding: 1.6em;
+        }
+    }
+    
+    .formularioContacto {
+        margin: 0 1.6em;
+
+        fieldset {
+            width: 32.5em;
+            height: 27.5em;
+
+            legend {
+                padding: 0.8em 0;
+                font-size: 1.25em;
+            }
+
+            label {
+                font-size: 0.85em;
+            }
+
+            input {
+                font-size: 0.85em;
+            }
+
+            .form-group {
+                padding: 0.75em;
+            }
+
+            #inputName {
+                width: 7.5em;
+            }
+
+            #inputSurname {
+                width: 9em;
+            }
+
+            #inputEmail3 {
+                width: 12.5em;
+            }
+
+            .form-check {
+                padding: 1.5em;
+            }
+
+            .checkboxesFormulario {
+                padding: 0 0.5em;
+            }
+
+            .botonesFormulario {
+                button {
+                    padding: 0.4em;
+                    margin: 0 1.75em;
+                }
+            }
+        }
+    }
+
+    .mapaContacto {
+        margin: 0 1.6em;
+
+        iframe {
+            width: 32.5em;
+            height: 27.5em;
+        }
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .contacto {
+        h2 {
+            font-size: 1.775em;
+            padding: 1.42em;
+        }
+    }
+    
+    .formularioContacto {
+        margin: 0 1.42em;
+
+        fieldset {
+            width: 30em;
+            height: 22.5em;
+
+            legend {
+                padding: 0.711em 0;
+                font-size: 1.065em;
+            }
+            
+            .form-group{
+                padding: 0.711em;
+            }
+
+            #inputName {
+                width: 7.11em;
+            }
+
+            #inputSurname {
+                width: 8.875em;
+            }
+
+            #inputEmail3 {
+                width: 10.665em;
+            }
+
+            .form-check {
+                padding: 0.75em;
+            }
+
+            .checkboxesFormulario {
+                padding: 0 0.1em;
+            }
+
+            .botonesFormulario {
+                button {
+                    padding: 0.36em;
+                    margin: 0 1.42em;
+                }
+            }
+        }
+        
+    }
+    
+    .mapaContacto {
+        margin: 0 1.42em;
+    }
+    
+    .mapaContacto iframe {
+        width: 30em;
+        height: 22.5em;
+    }
+}
+
+@media (max-width: 720px) {
+    .informacionContacto {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 3em;
+    }
+    
+    .contacto {
+        h2 {
+            font-size: 2em;
+            padding: 1.5em;
+        }
+    }
+
+    .formularioContacto {
+        width: 100% !important;
+        padding: 1em 0;
+
+        fieldset {
+            width: 25em;
+            height: 30em;
+            margin: 0 auto;
+
+            legend {
+                text-align: center;
+                padding: 1em 0;
+                font-size: 1.5em;
+            }
+
+            .form-group{
+                padding: 1em;
+            }
+
+            .form-check {
+                padding: 1em;
+            }
+        }
+    }
+
+    .mapaContacto {
+        width: 100% !important;
+        padding: 2em 0;
+
+        iframe {
+            width: 25em;
+            height: 30em;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .informacionContacto {
+        padding: 1.5em;
+    }
+    
+    .contacto {
+        h2 {
+            font-size: 1.2em;
+            padding: 0.75em;
+        }
+    }
+    
+    .formularioContacto {
+        margin: 0 0.75em;
+
+        fieldset {
+            width: 15em;
+            height: 22.5em;
+
+            legend {
+                padding: 0.4em 0;
+                font-size: 0.9em;
+            }
+
+            .form-group{
+                padding: 0.4em;
+            }
+
+            label {
+                font-size: 0.55em;
+            }
+
+            input {
+                padding: 0.2em;
+                font-size: 0.55em;
+            }
+
+            button {
+                font-size: 0.6em;
+            }
+
+            #inputName {
+                width: 7em;
+            }
+
+            #inputSurname {
+                width: 8.5em;
+            }
+
+            #inputEmail3 {
+                width: 10em;
+            }
+
+            .form-check {
+                padding: 0.75em;
+            }
+
+            .checkboxesFormulario {
+                padding: 0em;
+
+                button {
+                    padding: 0.2em;
+                }
+            }
+        }
+    }
+
+    .mapaContacto {
+        width: 100% !important;
+        padding: 0.75em 0;
+
+        iframe {
+            width: 15em;
+            height: 22.5em;
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .informacionContacto {
+        padding: 1.4em;
+    }
+    
+    .contacto {
+        h2 {
+            font-size: 1.1em;
+            padding: 0.65em;
+        }
+    }
+    
+    .formularioContacto {
+        margin: 0 0.65em;
+    }
+    
+    .formularioContacto {
+        fieldset {
+            width: 13.5em;
+            height: 21em;
+    
+            legend {
+                padding: 0.325em 0;
+                font-size: 0.8em;
+            }
+
+            .form-group{
+                padding: 0.325em;
+            }
+
+            label {
+                font-size: 0.5em;
+            }
+
+            input {
+                padding: 0.175em;
+                font-size: 0.5em;
+            }
+
+            button {
+                font-size: 0.525em;
+            }
+
+            #inputName {
+                width: 6em;
+            }
+
+            #inputSurname {
+                width: 7.25em;
+            }
+
+            #inputEmail3 {
+                width: 8.5em;
+            }
+
+            .form-check {
+                padding: 0.65em;
+            }
+
+            .botonesFormulario {
+                button {
+                    padding: 0.175em;
+                }
+            }
+        }
+    }
+    
+    .mapaContacto {
+        padding: 0.65em 0;
+
+        iframe {
+            width: 13.5em;
+            height: 21em;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*---------------------------------ACLARACIONES-------------------------------------------
+1. Las medidas iniciales para monitor grande/estándar (1920x1080), pero también se tratan
+las de monitor mediano/pequeño (1440x900 y 1366x768 respectivamente), asi como las de móvil grande o tablet (720x1280)
+y móvil mediano/pequeño (375x667 y 320x568 respectivamente)
+
+2. Como variables se definen los colores principales enumerados que corresponden a la paleta elegida para el sitio*/
+
+
+@import "./partialsGenerales/variables";
+@import "./partialsGenerales/general";
+@import "./partialsGenerales/header";
+@import "./partialsGenerales/footer";
+@import "./partialsPaginas/index";
+@import "./partialsPaginas/productos";
+@import "./partialsPaginas/recomendaciones";
+@import "./partialsPaginas/nosotros";
+@import "./partialsPaginas/contacto";

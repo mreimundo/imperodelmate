@@ -1,0 +1,296 @@
+.nosotros {
+    display: grid;
+
+    h2 {
+        font-size: 2.5em;
+        padding: 2.5em 0;
+        margin: 0 auto;
+        animation: aparicion 1s;
+    }
+}
+
+#gianmarco {
+    animation: aparicion 1.5s;
+}
+
+#lorenzo {
+    animation: aparicion 2.5s;
+}
+
+#diego {
+    animation: aparicion 3.5s;
+}
+
+.imagenesNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 30em);
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        width: 30em;
+        transition: all 0.3s ease;
+    }
+
+    img:hover {
+        width: 31.5em;
+    }
+
+    figure {
+        padding: 1em 0 3.5em 0;
+        figcaption {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.descripcionNosotros {
+    width: 85% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+    margin: 0 auto;
+    animation: aparicion 4s;
+
+    p {
+        font-size: 1.3em;
+        padding: 0.2em;
+    }
+
+    p:first-child {
+        font-size: 1.5em;
+        font-style: italic;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .nosotros {
+        h2 {
+            font-size: 2.25em;
+            padding: 2.25em 0;
+        }
+    }
+    
+    .imagenesNosotros {
+        grid-template-columns: repeat(3, 25em);
+        img {
+            width: 25em;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            width: 26em;
+        }
+
+        figure {
+            padding: 0.9em 0 3.25em 0;
+
+            figcaption {
+                p {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .descripcionNosotros {
+        padding-bottom: 2.7em;
+
+        p {
+            font-size: 1em;
+            padding: 0.175em;
+        }
+
+        p:first-child {
+            font-size: 1.25em;
+        }
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .nosotros {
+        h2 {
+            font-size: 1.8em;
+            padding: 1.8em 0;
+        }
+    }
+    
+    .imagenesNosotros {
+        grid-template-columns: repeat(3, 21.4em);
+        img {
+            width: 21.4em;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            width: 22em;
+        }
+
+        figure {
+            padding: 0.715em 0 2.5em 0;
+
+            figcaption {
+                p {
+                    font-size: 0.93em;
+                }
+            }
+        }
+    }
+
+    .descripcionNosotros {
+        padding-bottom: 2.14em;
+
+        p {
+            font-size: 0.93em;
+            padding: 0.142em;
+        }
+
+        p:first-child {
+            font-size: 1.2em;
+        }
+    }
+        
+}
+
+@media (max-width: 720px) {
+    .nosotros {
+
+        h2 {
+            font-size: 2em;
+            padding: 2em 0;
+        }
+    }
+    
+    .imagenesNosotros {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-evenly;
+        align-content: center;
+
+        img {
+            width: 28em;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            width: 29em;
+        }
+
+        figure {
+            padding: 0.8em 0 2.75em 0;
+
+            figcaption {
+                p {
+                    font-size: 1.15em;
+                }
+            }
+        }
+    }
+
+    .descripcionNosotros {
+        padding-bottom: 2.5em;
+
+        p {
+            font-size: 1.25em;
+            padding: 0.15em;
+        }
+
+        p:first-child {
+            font-size: 1.4em;
+        }
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .nosotros {
+        h2 {
+            font-size: 1.05em;
+            padding: 1.05em 0;
+        }
+    }
+    
+    .imagenesNosotros {
+        img {
+            width: 15em;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            width: 15.5em;
+        }
+
+        figure {
+            padding: 0.417em 0 1.45em 0;
+
+            figcaption {
+                p {
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+    
+    .descripcionNosotros {
+        padding-bottom: 1.25em;
+
+        p {
+            font-size: 0.7em;
+            padding: 0.085em;
+        }
+
+        p:first-child {
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .nosotros {
+        h2 {
+            font-size: 0.9em;
+            padding: 0.9em 0;
+        }
+    }
+    
+    .imagenesNosotros {
+        img {
+            width: 12.5em;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            width: 13em;
+        }
+
+        figure {
+            padding: 0.355em 0 1.24em 0;
+
+            figcaption {
+                p {
+                    font-size: 0.51em;
+                }
+            }
+        }
+    }
+
+    .descripcionNosotros {
+        padding-bottom: 1em 0;
+
+        p {
+            font-size: 0.65em;
+            padding: 0.07em;
+        }
+
+        p:first-child {
+            font-size: 0.675em;
+        }
+    }
+}

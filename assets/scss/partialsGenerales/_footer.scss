@@ -5,6 +5,10 @@ footer {
     height: 5em;
     background-color: $colorPrincipal2;
 
+    h3 {
+        font-size: 1.5em;
+    }
+
     .redes {
         img {
             padding: 0.5em;
@@ -36,7 +40,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
 
-        h4 {
+        h3 {
             font-size: 1.75em;
         }
 
@@ -58,7 +62,7 @@ footer {
     footer {
         height: 4.1em;
 
-        h4 {
+        h3 {
             font-size: 0.911em;
         }
 
@@ -76,7 +80,7 @@ footer {
     footer {
         height: 3.5em;
 
-        h4 {
+        h3 {
             font-size: 0.77em;
         }
 

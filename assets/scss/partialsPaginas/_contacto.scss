@@ -1,8 +1,9 @@
+
 .contacto {
-    width: 100%;
-    display: flex;
+    width: map-get($containerPrincipal, ancho);
+    display: map-get($containerPrincipal, disposicion);
+    align-items: map-get($containerPrincipal, alineado);
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     h2 {
         font-size: 2.5em;
@@ -23,13 +24,10 @@
 
 .formularioContacto {
     margin: 0 2em;
-}
+    justify-content: center;
 
-.formularioContacto {
     fieldset {
-        width: 40em;
-        height: 30em;
-        border: 3px solid $colorNegro;
+        @include camposCuadro(40em, 30em, 3px solid $colorNegro);
 
         legend {
             text-align: center;
@@ -84,14 +82,10 @@
 }
 
 .mapaContacto {
-    width: 50%;
-    justify-content: center;
-    margin: 0 2em;
+    @extend .formularioContacto;
 
     iframe {
-        width: 40em;
-        height: 30em;
-        border: 3px solid $colorNegro;
+        @include camposCuadro(40em, 30em, 3px solid $colorNegro);
     }
 }
 
@@ -110,7 +104,7 @@
         fieldset {
             width: 32.5em;
             height: 27.5em;
-
+            @include camposCuadro(32.5em, 27.5em, 3px solid $colorNegro);
             legend {
                 padding: 0.8em 0;
                 font-size: 1.25em;
@@ -158,11 +152,8 @@
     }
 
     .mapaContacto {
-        margin: 0 1.6em;
-
         iframe {
-            width: 32.5em;
-            height: 27.5em;
+            @include camposCuadro(32.5em, 27.5em, 3px solid $colorNegro);
         }
     }
 
@@ -180,8 +171,7 @@
         margin: 0 1.42em;
 
         fieldset {
-            width: 30em;
-            height: 22.5em;
+            @include camposCuadro(30em, 22.5em, 3px solid $colorNegro);
 
             legend {
                 padding: 0.711em 0;
@@ -223,13 +213,11 @@
     }
     
     .mapaContacto {
-        margin: 0 1.42em;
+        iframe {
+            @include camposCuadro(30em, 22.5em, 3px solid $colorNegro);
+        }
     }
-    
-    .mapaContacto iframe {
-        width: 30em;
-        height: 22.5em;
-    }
+
 }
 
 @media (max-width: 720px) {
@@ -251,8 +239,7 @@
         padding: 1em 0;
 
         fieldset {
-            width: 25em;
-            height: 30em;
+            @include camposCuadro(25em, 30em, 3px solid $colorNegro);
             margin: 0 auto;
 
             legend {
@@ -272,12 +259,8 @@
     }
 
     .mapaContacto {
-        width: 100% !important;
-        padding: 2em 0;
-
         iframe {
-            width: 25em;
-            height: 30em;
+            @include camposCuadro(25em, 30em, 3px solid $colorNegro);
             margin: 0 auto;
         }
     }
@@ -299,8 +282,7 @@
         margin: 0 0.75em;
 
         fieldset {
-            width: 15em;
-            height: 22.5em;
+            @include camposCuadro(15em, 22.5em, 3px solid $colorNegro);
 
             legend {
                 padding: 0.4em 0;
@@ -351,12 +333,8 @@
     }
 
     .mapaContacto {
-        width: 100% !important;
-        padding: 0.75em 0;
-
         iframe {
-            width: 15em;
-            height: 22.5em;
+            @include camposCuadro(15em, 22.5em, 3px solid $colorNegro);
         }
     }
 
@@ -382,6 +360,7 @@
         fieldset {
             width: 13.5em;
             height: 21em;
+            @include camposCuadro(13.5em, 21em, 3px solid $colorNegro);
     
             legend {
                 padding: 0.325em 0;
@@ -430,11 +409,8 @@
     }
     
     .mapaContacto {
-        padding: 0.65em 0;
-
         iframe {
-            width: 13.5em;
-            height: 21em;
+            @include camposCuadro(13.5em, 21em, 3px solid $colorNegro);
         }
     }
 }

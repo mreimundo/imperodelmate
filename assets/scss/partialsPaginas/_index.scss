@@ -1,11 +1,11 @@
 .contenidoIndex {
-    width: 100%;
-    display: flex;
+    width: map-get($containerPrincipal, ancho);
+    display: map-get($containerPrincipal, disposicion);
+    justify-content: map-get($containerPrincipal, justificado);
+    align-items: map-get($containerPrincipal, alineado);
+    text-align: map-get($containerPrincipal, texto);
     background-image: url(../images/mateIndex.jpg);
     background-size: cover;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
     height: 82em;
 }
 

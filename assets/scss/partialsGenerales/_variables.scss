@@ -9,3 +9,10 @@ $colorBotones: rgb(193, 255, 143);
 $colorBotonesOscuro: rgb(142, 214, 83);
 $colorBotonesOpaco: rgba(193, 255, 143, 0.76);
 $colorNumeroOpaco: rgba(198,238,186, 0.75);
+$containerPrincipal: (
+    ancho: 100%,
+    disposicion: flex,
+    justificado: flex-start,
+    alineado: center,
+    texto: center
+)

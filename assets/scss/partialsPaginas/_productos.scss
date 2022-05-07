@@ -1,8 +1,10 @@
 .barraProductos {
-    display: block;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+    width: map-get($containerPrincipal, ancho);
+    display: map-get($containerPrincipal, disposicion);
+    justify-content: map-get($containerPrincipal, justificado);
+    align-items: map-get($containerPrincipal, alineado);
+    text-align: map-get($containerPrincipal, texto);
+    flex-direction: column;
     height: 12em;
 
     p {

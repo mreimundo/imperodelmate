@@ -4,7 +4,7 @@
     "sources": [
         "../scss/style.scss",
         "../scss/partialsGenerales/_variables.scss",
-        "../scss/partialsGenerales/mixins.scss",
+        "../scss/partialsGenerales/_mixins.scss",
         "../scss/partialsGenerales/_general.scss",
         "../scss/partialsGenerales/_header.scss",
         "../scss/partialsGenerales/_footer.scss",

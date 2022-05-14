@@ -1,3 +1,11 @@
+Nombre del proyecto: Impero del mate
+
+Impero del mate es un emprendimiento originado en Italia con el objetivo de extender la cultura Argentina al mundo, a un precio accesible y otorgando la mejor calidad posible a nuestros clientes. 
+
+El sitio web se desarrolló principalmente en HTML y CSS, aunque con la ayuda de Bootstrap se pudo agregar funcionalidad a algunos elementos.
+
+
+
 En un principio, se comprimieron las imágenes del proyecto en imagecompressor. Posteriormente, se reajustaron en fotor al tamaño máximo usado en el sitio y por último se compararon los tiempos de carga antes y luego de realizar este proceso, siendo los resultados:
 
 Tiempo de carga inicial

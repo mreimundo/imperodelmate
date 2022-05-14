@@ -1,0 +1,28 @@
+{
+  "name": "impero-del-mate",
+  "version": "1.0.0",
+  "description": "Impero del mate es un emprendimiento Italiano dedicado a la venta de mates y todos sus accesorios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mreimundo/imperodelmate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mreimundo/imperodelmate/issues"
+  },
+  "homepage": "https://github.com/mreimundo/imperodelmate#readme",
+  "devDependencies": {
+    "node": "^17.7.2",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16",
+    "sass": "^1.51.0"
+  }
+}

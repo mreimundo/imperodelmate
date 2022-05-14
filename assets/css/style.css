@@ -9,105 +9,86 @@ y móvil mediano/pequeño (375x667 y 320x568 respectivamente)
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', serif;
-}
+  font-family: 'Roboto Condensed', serif; }
+  * a {
+    text-decoration: none;
+    color: #000; }
+  * a:hover {
+    color: darkgreen; }
 
 .bg-light {
-  background-color: #E6EED5 !important;
-}
+  background-color: #E6EED5 !important; }
 
 .container-fluid {
-  background-color: #fff !important;
-}
-
-.container-fluid h2 {
-  font-size: 2.5em;
-  padding: 2em 0;
-  animation: aparicion 1s;
-}
+  background-color: #fff !important; }
+  .container-fluid h2 {
+    font-size: 2.5em;
+    padding: 2em 0;
+    animation: aparicion 1s; }
 
 .btn-outline-success:hover {
   background-color: #d5efc1;
-  color: #000;
-}
+  color: #000; }
 
 @keyframes aparicion {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @media (max-width: 1440px) {
   .container-fluid h2 {
     font-size: 2em;
-    padding: 1.5em 0;
-  }
-}
+    padding: 1.5em 0; } }
 
 @media (max-width: 1366px) {
   .container-fluid h2 {
     font-size: 1.75em;
-    padding: 1.4em 0;
-  }
-}
+    padding: 1.4em 0; } }
 
 @media (max-width: 720px) {
   .btn-secondary, .btn-secondary:hover {
-    background-color: #E6EED5;
-  }
+    background-color: #E6EED5; }
   .dropdown-menu {
-    background-color: rgba(230, 238, 213, 0.75);
-  }
+    background-color: rgba(230, 238, 213, 0.75); }
   .container-fluid h2 {
     font-size: 2.25em;
-    padding: 1.75em 0;
-  }
-}
+    padding: 1.75em 0; } }
 
 @media (max-width: 375px) {
   .dropdown-menu li {
-    font-size: 0.75em;
-  }
+    font-size: 0.75em; }
   .container-fluid h2 {
     font-size: 1.2em;
-    padding: 1.25em 0;
-  }
-}
+    padding: 1.25em 0; } }
 
 @media (max-width: 320px) {
   .dropdown-menu li {
-    font-size: 0.7em;
-  }
+    font-size: 0.7em; }
   .container-fluid h2 {
     font-size: 1.1em;
-    padding: 1.2em 0;
-  }
-}
+    padding: 1.2em 0; } }
 
 #logo {
   width: 7.8125em;
-  padding: 0.3125em;
-}
+  padding: 0.3125em; }
+  #logo img {
+    width: 95%;
+    transition: all 0.3s ease; }
+  #logo img:hover {
+    width: 100%; }
 
-#logo img {
-  width: 95%;
-  transition: all 0.3s ease;
-}
-
-#logo img:hover {
-  width: 100%;
-}
+#navDesktop {
+  height: 7.8125em; }
+  #navDesktop ul {
+    margin: 0; }
 
 #tituloSitio {
   position: absolute;
   left: 5em;
   font-family: 'Roboto Condensed', serif !important;
   font-weight: bold;
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 .menu {
   background-color: #E6EED5;
@@ -115,232 +96,198 @@ y móvil mediano/pequeño (375x667 y 320x568 respectivamente)
   height: 7.8125em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
 
 ul {
-  list-style: none;
-}
-
-ul li {
-  font-size: 1.2em;
-  display: inline-block;
-  padding: 1em;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.3s ease;
-}
-
-ul li a:hover {
-  font-size: 1.1em;
-  color: darkgreen;
-}
+  list-style: none; }
+  ul li {
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 1em; }
+    ul li a {
+      text-decoration: none;
+      color: #000;
+      transition: all 0.3s ease; }
+    ul li a:hover {
+      font-size: 1.1em;
+      color: darkgreen; }
 
 #navMobile {
   display: none;
-}
+  right: 0.5em; }
 
 @media (max-width: 1440px) {
   #logo {
     width: 5.859375em;
-    padding: 0.234375em;
-  }
-  #logo img {
-    width: 5.859375em;
-  }
+    padding: 0.234375em; }
+    #logo img {
+      width: 5.859375em; }
   .menu {
     width: 100%;
-    height: 5.859375em;
-  }
+    height: 5.859375em; }
   ul li {
     font-size: 0.9em;
-    padding: 0.75em;
-  }
+    padding: 0.75em; }
   header h1 {
-    left: 3.75em;
-  }
-}
+    left: 3.75em; } }
 
 @media (max-width: 1366px) {
   #logo {
     width: 5.55em;
-    padding: 0.2223em;
-  }
-  #logo img {
-    width: 5.55em;
-  }
+    padding: 0.2223em; }
+    #logo img {
+      width: 5.55em; }
   .menu {
     width: 100%;
-    height: 5.55em;
-  }
+    height: 5.55em; }
   ul li {
     font-size: 0.85375em;
-    padding: 0.711em;
-  }
+    padding: 0.711em; }
   header h1 {
-    left: 3.557em;
-  }
-}
+    left: 3.557em; } }
 
 @media (max-width: 720px) {
   .menu {
-    height: 6em;
-  }
+    height: 6em; }
   #tituloSitio {
-    left: 4em;
-  }
+    left: 4em; }
   #logo {
     width: 6em;
-    padding: 0.2223em;
-  }
-  #logo img {
-    width: 6em;
-  }
+    padding: 0.2223em; }
+    #logo img {
+      width: 6em; }
   #navDesktop {
-    display: none;
-  }
+    display: none !important; }
   #navMobile {
     display: block;
-    z-index: 1;
-  }
+    z-index: 1; }
   ul li a {
-    font-size: 1em;
-  }
+    font-size: 1em; }
   #hamburgerIcon {
-    width: 2em;
-  }
+    width: 2em; }
   header nav a {
-    font-size: 1.25em;
-  }
-}
+    font-size: 1.25em; } }
 
 @media (max-width: 375px) {
   .menu {
-    height: 3.125em;
-  }
+    height: 3.125em; }
   #tituloSitio {
-    font-size: 1.05em;
-  }
+    font-size: 1.05em; }
   #hamburgerIcon {
-    width: 1em;
-  }
+    width: 1em; }
   .dropdown-menu li {
-    font-size: 0.75em;
-  }
+    font-size: 0.75em; }
   #logo {
     width: 3.125em;
-    padding: 0.2223em;
-  }
-  #logo img {
-    width: 3.125em;
-  }
+    padding: 0.2223em; }
+    #logo img {
+      width: 3.125em; }
   header nav a {
-    font-size: 0.7em;
-  }
-}
+    font-size: 0.7em; } }
 
 @media (max-width: 320px) {
   .menu {
-    height: 2.67em;
-  }
+    height: 2.67em; }
   #tituloSitio {
-    font-size: 0.9em;
-  }
+    font-size: 0.9em; }
   #logo {
     width: 2.67em;
-    padding: 0.2223em;
-  }
-  #logo img {
-    width: 2.67em;
-  }
+    padding: 0.2223em; }
+    #logo img {
+      width: 2.67em; }
   #hamburgerIcon {
-    width: 0.85em;
-  }
+    width: 0.85em; }
   header nav a {
-    font-size: 0.55em;
-  }
-}
+    font-size: 0.55em; } }
 
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 5em;
-  background-color: #d5efc1;
-}
-
-footer h3 {
-  font-size: 1.5em;
-}
-
-footer .redes img {
-  padding: 0.5em;
-  width: 3em;
-  transition: all 0.3s ease;
-}
-
-footer .redes img:hover {
-  width: 3.2em;
-}
+  height: 22.5em;
+  background-color: #d5efc1; }
+  footer p {
+    color: #000; }
+  footer h4 {
+    font-size: 1.25em; }
+    footer h4 a:hover {
+      color: darkgreen; }
+  footer h3 {
+    font-size: 1.5em;
+    color: #000; }
+  footer hr {
+    color: #000; }
+  footer .redes img {
+    width: 2em;
+    margin: 0.5em;
+    transition: all 0.3s ease; }
+  footer .copyright {
+    background-color: rgba(155, 189, 129, 0.6); }
 
 @media (max-width: 1440px) {
   footer {
-    height: 3.75em;
-  }
-}
+    height: 20em; }
+    footer p {
+      font-size: 0.85em; }
+    footer h4 {
+      font-size: 1em; }
+    footer h3 {
+      font-size: 1.2em; }
+    footer .redes img {
+      width: 1.5em;
+      margin: 0.375em;
+      transition: all 0.3s ease; } }
 
 @media (max-width: 1366px) {
   footer {
-    height: 3.557em;
-  }
-}
+    height: 18.5em; }
+    footer p {
+      font-size: 0.75em; }
+    footer h4 {
+      font-size: 0.95em; }
+    footer h3 {
+      font-size: 1.1em; }
+    footer .redes img {
+      width: 1.4em;
+      margin: 0.37em;
+      transition: all 0.3s ease; } }
 
 @media (max-width: 720px) {
-  footer {
-    height: 7.5em;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+  footer .container .hipervinculosFooter {
+    display: none !important; }
   footer h3 {
     font-size: 1.75em;
-  }
+    padding: 1em 0; }
   footer p {
-    display: none;
-  }
+    font-size: 1em; }
   footer .redes img {
-    width: 6.5em;
-    padding: 0 2em;
-  }
-}
+    width: 2.5em; }
+  footer .copyright {
+    width: 100%;
+    height: 1.5em; } }
 
 @media (max-width: 375px) {
   footer {
-    height: 4.1em;
-  }
-  footer h3 {
-    font-size: 0.911em;
-  }
-  footer .redes img {
-    width: 3.5em;
-    padding: 0 1em;
-  }
-}
+    height: 12.25em; }
+    footer h3 {
+      font-size: 1em;
+      padding: 0.6em 0; }
+    footer p {
+      font-size: 0.6em; }
+    footer .redes img {
+      width: 1.5em; }
+    footer .copyright {
+      height: 1em; } }
 
 @media (max-width: 320px) {
   footer {
-    height: 3.5em;
-  }
-  footer h3 {
-    font-size: 0.77em;
-  }
-  footer .redes img {
-    width: 3.2em;
-    padding: 0 0.9em;
-  }
-}
+    height: 10.25em; }
+    footer h3 {
+      font-size: 0.86em;
+      padding: 0.5em 0; }
+    footer p {
+      font-size: 0.5em; }
+    footer .redes img {
+      width: 1.3em; }
+    footer .copyright {
+      height: 0.86em; } }
 
 .contenidoIndex {
   width: 100%;
@@ -350,8 +297,7 @@ footer .redes img:hover {
   text-align: center;
   background-image: url(../images/mateIndex.jpg);
   background-size: cover;
-  height: 82em;
-}
+  height: 82em; }
 
 .textoIndex {
   display: block;
@@ -360,169 +306,132 @@ footer .redes img:hover {
   margin: 0 auto;
   text-align: center;
   padding: 3em;
-  color: #fff;
-}
-
-.textoIndex h2 {
-  padding-bottom: 5.5em !important;
-  font-size: 3em;
-  font-family: 'Roboto Slab', serif !important;
-  animation: aparicion 1.5s;
-}
-
-.textoIndex p {
-  font-size: 1.5em;
-  padding-bottom: 0.7em;
-  font-family: 'Roboto Slab', serif;
-  animation: aparicion 1.5s;
-}
-
-.textoIndex a {
-  text-decoration: none;
-  position: inherit;
-  top: 12em;
-  border: 0.1em solid groove;
-  border-radius: 1em;
-  padding: 0.5em;
-  font-size: 1.5em;
-  color: #000;
-  background-color: rgba(230, 238, 213, 0.75);
-  font-family: 'Roboto Slab', serif;
-  transition: all 0.3s ease;
-  animation: aparicion 2s;
-}
-
-.textoIndex a:hover {
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-  font-size: 1.6em;
-}
-
-@media (max-width: 1440px) {
-  .contenidoIndex {
-    height: 61.5em;
-  }
-  .textoIndex {
-    bottom: 9em;
-    margin: 0 auto;
-    padding: 2.25em;
-  }
+  color: #fff; }
   .textoIndex h2 {
-    padding-bottom: 4.125em;
-    font-size: 2.25em;
-  }
-  .textoIndex p {
-    font-size: 1.125em;
-    padding-bottom: 0.525em;
-  }
-  .textoIndex a {
-    top: 9em;
-    border: 0.075em solid groove;
-    border-radius: 0.75em;
-    padding: 0.375em;
-    font-size: 1.125em;
-  }
-}
-
-@media (max-width: 1366px) {
-  .contenidoIndex {
-    height: 58.5em;
-  }
-  .textoIndex {
-    bottom: 8.5375em;
-    margin: 0 auto;
-    padding: 2.134em;
-  }
-  .textoIndex h2 {
-    padding-bottom: 3.91em;
-    font-size: 2.1343em;
-  }
-  .textoIndex p {
-    font-size: 1.067em;
-    padding-bottom: 0.498em;
-  }
-  .textoIndex a {
-    top: 8.5375em;
-    border: 0.071em solid groove;
-    border-radius: 0.71em;
-    padding: 0.355em;
-    font-size: 1.067em;
-  }
-}
-
-@media (max-width: 720px) {
-  .contenidoIndex {
-    background-position: 75% 100%;
-    height: 82em;
-  }
-  .textoIndex {
-    bottom: 7.5em;
-  }
-  .textoIndex h2 {
-    padding-bottom: 4em;
+    padding-bottom: 5.5em !important;
     font-size: 3em;
-  }
+    font-family: 'Roboto Slab', serif !important;
+    animation: aparicion 1.5s; }
   .textoIndex p {
     font-size: 1.5em;
-    padding-bottom: 0.75em;
-  }
+    padding-bottom: 0.7em;
+    font-family: 'Roboto Slab', serif;
+    animation: aparicion 1.5s; }
   .textoIndex a {
-    top: 8em;
+    position: inherit;
+    top: 12em;
     border: 0.1em solid groove;
     border-radius: 1em;
     padding: 0.5em;
-    font-size: 1.75em;
-  }
-}
+    font-size: 1.5em;
+    background-color: rgba(213, 239, 193, 0.8);
+    font-family: 'Roboto Slab', serif;
+    transition: all 0.3s ease;
+    animation: aparicion 2s; }
+  .textoIndex a:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    font-size: 1.6em; }
+
+@media (max-width: 1440px) {
+  .contenidoIndex {
+    height: 61.5em; }
+  .textoIndex {
+    bottom: 9em;
+    margin: 0 auto;
+    padding: 2.25em; }
+    .textoIndex h2 {
+      padding-bottom: 4.125em;
+      font-size: 2.25em; }
+    .textoIndex p {
+      font-size: 1.125em;
+      padding-bottom: 0.525em; }
+    .textoIndex a {
+      top: 9em;
+      border: 0.075em solid groove;
+      border-radius: 0.75em;
+      padding: 0.375em;
+      font-size: 1.125em; } }
+
+@media (max-width: 1366px) {
+  .contenidoIndex {
+    height: 58.5em; }
+  .textoIndex {
+    bottom: 8.5375em;
+    margin: 0 auto;
+    padding: 2.134em; }
+    .textoIndex h2 {
+      padding-bottom: 3.91em;
+      font-size: 2.1343em; }
+    .textoIndex p {
+      font-size: 1.067em;
+      padding-bottom: 0.498em; }
+    .textoIndex a {
+      top: 8.5375em;
+      border: 0.071em solid groove;
+      border-radius: 0.71em;
+      padding: 0.355em;
+      font-size: 1.067em; } }
+
+@media (max-width: 720px) {
+  .contenidoIndex {
+    background-position: 77% 100%;
+    height: 82em; }
+  .textoIndex {
+    bottom: 13.5em; }
+    .textoIndex h2 {
+      padding-bottom: 2.5em !important;
+      font-size: 3em; }
+    .textoIndex p {
+      font-size: 1.5em;
+      padding-bottom: 0.75em; }
+    .textoIndex a {
+      top: 8em;
+      border: 0.1em solid groove;
+      border-radius: 1em;
+      padding: 0.5em;
+      font-size: 1.75em; } }
 
 @media (max-width: 375px) {
   .contenidoIndex {
     background-position: 78% 100%;
-    height: 42.7em;
-  }
+    height: 42.7em; }
   .textoIndex {
-    bottom: 5.5em;
-  }
-  .textoIndex h2 {
-    padding-bottom: 2.6em;
-    font-size: 1.55em;
-  }
-  .textoIndex p {
-    font-size: 0.78em;
-    padding-bottom: 0.39em;
-  }
-  .textoIndex a {
-    top: 8em;
-    border: 0.1em solid groove;
-    border-radius: 1em;
-    padding: 0.5em;
-    font-size: 0.911em;
-  }
-}
+    bottom: 7em;
+    padding: 1.25em; }
+    .textoIndex h2 {
+      padding-bottom: 2em;
+      font-size: 1.55em; }
+    .textoIndex p {
+      font-size: 0.72em;
+      padding-bottom: 0.39em;
+      margin: 1em 0; }
+    .textoIndex a {
+      top: 8em;
+      border: 0.1em solid groove;
+      border-radius: 1em;
+      padding: 0.5em;
+      font-size: 0.911em; } }
 
 @media (max-width: 320px) {
   .contenidoIndex {
     background-position: 78% 100%;
-    height: 36.5em;
-  }
+    height: 36.5em; }
   .textoIndex {
-    bottom: 4em;
-  }
-  .textoIndex h2 {
-    padding-bottom: 2.22em;
-    font-size: 1.32em;
-  }
-  .textoIndex p {
-    font-size: 0.64em;
-    padding-bottom: 0.33em;
-  }
-  .textoIndex a {
-    top: 7em;
-    border: 0.1em solid groove;
-    border-radius: 1em;
-    padding: 0.5em;
-    font-size: 0.77em;
-  }
-}
+    bottom: 5.5em;
+    padding: 1em; }
+    .textoIndex h2 {
+      padding-bottom: 2.5em !important;
+      font-size: 1.32em; }
+    .textoIndex p {
+      font-size: 0.6em;
+      padding-bottom: 0.3em;
+      margin: 0.75em 0; }
+    .textoIndex a {
+      top: 10em;
+      border: 0.1em solid groove;
+      border-radius: 1em;
+      padding: 0.5em;
+      font-size: 0.77em; } }
 
 .barraProductos {
   width: 100%;
@@ -531,37 +440,27 @@ footer .redes img:hover {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 12em;
-}
-
-.barraProductos p {
-  padding: 0.5em;
-  animation: aparicion 2.5s;
-}
-
-.barraProductos form {
-  width: 15em;
-  justify-self: center;
-  margin: 0 auto;
-  animation: aparicion 2.5s;
-}
-
-.barraProductos input {
-  border: 0.1em solid #000;
-  border-radius: 0.5em;
-  padding: 0.3em;
-  margin: 1em 0;
-}
+  height: 12em; }
+  .barraProductos p {
+    padding: 0.5em;
+    animation: aparicion 2.5s; }
+  .barraProductos form {
+    width: 15em;
+    justify-self: center;
+    margin: 0 auto;
+    animation: aparicion 2.5s; }
+  .barraProductos input {
+    border: 0.1em solid #000;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    margin: 1em 0; }
 
 .tituloProductos {
   height: 5em;
-  padding-top: 1em;
-}
-
-.tituloProductos h2 {
-  font-size: 2.5em;
-  animation: aparicion 1s;
-}
+  padding-top: 1em; }
+  .tituloProductos h2 {
+    font-size: 2.5em;
+    animation: aparicion 1s; }
 
 .productos {
   width: 90%;
@@ -569,283 +468,210 @@ footer .redes img:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
-}
-
-.productos .tarjetaProductos {
-  transition: all 0.3s ease;
-  animation: aparicion 3s;
-}
-
-.productos .tarjetaProductos:hover {
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
+  margin: 0 auto; }
+  .productos .tarjetaProductos {
+    transition: all 0.3s ease;
+    animation: aparicion 3s; }
+  .productos .tarjetaProductos:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    cursor: pointer; }
 
 .tarjetaProductos {
   height: 35em;
   width: 20em;
   text-align: center;
   margin: 1em;
-  padding: 1em;
-}
-
-.tarjetaProductos img {
-  width: 17.5em;
-}
-
-.tarjetaProductos p {
-  padding: 0.2em;
-}
-
-.tarjetaProductos input {
-  text-decoration: none;
-  border: 0.1em solid #000;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  font-size: 1em;
-  background-color: rgba(193, 255, 143, 0.76);
-}
+  padding: 1em; }
+  .tarjetaProductos img {
+    width: 17.5em; }
+  .tarjetaProductos p {
+    padding: 0.2em; }
+  .tarjetaProductos input {
+    text-decoration: none;
+    border: 0.1em solid #000;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: rgba(193, 255, 143, 0.76); }
 
 .precioProductos {
   padding-top: 0.75em;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 @media (max-width: 1440px) {
   .barraProductos {
-    height: 10em;
-  }
-  .barraProductos p {
-    padding: 0.415em;
-  }
-  .barraProductos input {
-    border-radius: 0.415em;
-    font-size: 0.9em;
-  }
+    height: 10em; }
+    .barraProductos p {
+      padding: 0.415em; }
+    .barraProductos input {
+      border-radius: 0.415em;
+      font-size: 0.9em; }
   .tituloProductos {
     height: 4.15em;
-    padding-top: 0.83em;
-  }
-  .tituloProductos h2 {
-    font-size: 2.08em;
-  }
+    padding-top: 0.83em; }
+    .tituloProductos h2 {
+      font-size: 2.08em; }
   .productos {
     width: 80%;
-    padding: 3em 0;
-  }
+    padding: 3em 0; }
   .tarjetaProductos {
     height: 26em;
     width: 15em;
     text-align: center;
-    margin: 1.5em 0;
-  }
-  .tarjetaProductos img {
-    width: 13.125em;
-  }
-  .tarjetaProductos p {
-    padding: 0.166em;
-    font-size: 0.75em;
-  }
-  .tarjetaProductos input {
-    padding: 0.416em;
-    font-size: 0.75em;
-  }
+    margin: 1.5em 0; }
+    .tarjetaProductos img {
+      width: 13.125em; }
+    .tarjetaProductos p {
+      padding: 0.166em;
+      font-size: 0.75em; }
+    .tarjetaProductos input {
+      padding: 0.416em;
+      font-size: 0.75em; }
   .precioProductos {
     padding-top: 0.625em;
-    font-size: 1.125em;
-  }
-}
+    font-size: 1.125em; } }
 
 @media (max-width: 1366px) {
   .barraProductos {
-    height: 8.57em;
-  }
-  .barraProductos p {
-    padding: 0.357em;
-    font-size: 0.71em;
-  }
-  .barraProductos input {
-    padding: 0.2em;
-    font-size: 0.71em;
-  }
+    height: 8.57em; }
+    .barraProductos p {
+      padding: 0.357em;
+      font-size: 0.71em; }
+    .barraProductos input {
+      padding: 0.2em;
+      font-size: 0.71em; }
   .productos {
     width: 80%;
-    padding: 3em 0;
-  }
+    padding: 3em 0; }
   .tituloProductos {
     height: 3.57em;
-    padding-top: 0.71em;
-  }
-  .tituloProductos h2 {
-    font-size: 1.78em;
-  }
+    padding-top: 0.71em; }
+    .tituloProductos h2 {
+      font-size: 1.78em; }
   .tarjetaProductos {
     height: 25em;
     width: 14.25em;
-    margin: 2em 0;
-  }
-  .tarjetaProductos img {
-    width: 13.125em;
-  }
-  .tarjetaProductos p {
-    padding: 0.14em;
-  }
-  .tarjetaProductos input {
-    padding: 0.357em;
-    font-size: 0.71em;
-  }
+    margin: 2em 0; }
+    .tarjetaProductos img {
+      width: 13.125em; }
+    .tarjetaProductos p {
+      padding: 0.14em; }
+    .tarjetaProductos input {
+      padding: 0.357em;
+      font-size: 0.71em; }
   .precioProductos {
     padding-top: 0.53em;
-    font-size: 1.07em;
-  }
-}
+    font-size: 1.07em; } }
 
 @media (max-width: 720px) {
   .barraProductos {
-    height: 14.2em;
-  }
-  .barraProductos p {
-    padding: 0.575em;
-    font-size: 1em;
-  }
-  .barraProductos input {
-    padding: 0.3em;
-    font-size: 1em;
-    width: 15em;
-    margin: 1em 0;
-  }
-  .barraProductos button {
-    padding: 0.75em;
-    font-size: 1em;
-  }
+    height: 14.2em; }
+    .barraProductos p {
+      padding: 0.575em;
+      font-size: 1em; }
+    .barraProductos input {
+      padding: 0.3em;
+      font-size: 1em;
+      width: 15em;
+      margin: 1em 0; }
+    .barraProductos button {
+      padding: 0.75em;
+      font-size: 1em; }
   .tituloProductos {
     height: 5.9em;
-    padding-top: 1em;
-  }
-  .tituloProductos h2 {
-    font-size: 2.5em;
-    padding-top: 0.5em;
-  }
+    padding-top: 1em; }
+    .tituloProductos h2 {
+      font-size: 2.5em;
+      padding-top: 0.5em; }
   .tarjetaProductos {
     height: 42em;
     width: 25em;
-    margin-bottom: 1.5em;
-  }
-  .tarjetaProductos img {
-    width: 22.5em;
-  }
-  .tarjetaProductos p {
-    padding: 0.25em;
-    font-size: 1.25em;
-  }
-  .tarjetaProductos input {
-    padding: 0.5em;
-    font-size: 1.2em;
-  }
+    margin-bottom: 1.5em; }
+    .tarjetaProductos img {
+      width: 22.5em; }
+    .tarjetaProductos p {
+      padding: 0.25em;
+      font-size: 1.25em; }
+    .tarjetaProductos input {
+      padding: 0.5em;
+      font-size: 1.2em; }
   .precioProductos {
     padding-top: 0.5em;
-    font-size: 1.75em;
-  }
-}
+    font-size: 1.75em; } }
 
 @media (max-width: 375px) {
   .barraProductos {
     height: 7.395em;
-    padding-bottom: 0.75em;
-  }
-  .barraProductos p {
-    padding: 0.3em;
-    font-size: 0.75em;
-  }
-  .barraProductos input {
-    padding: 0.3em;
-    font-size: 0.65em;
-    width: 12em;
-    margin: 0 auto;
-  }
-  .barraProductos button {
-    padding: 0.5em;
-    font-size: 0.65em;
-  }
+    padding-bottom: 0.75em; }
+    .barraProductos p {
+      padding: 0.3em;
+      font-size: 0.75em; }
+    .barraProductos input {
+      padding: 0.3em;
+      font-size: 0.65em;
+      width: 12em;
+      margin: 0 auto; }
+    .barraProductos button {
+      padding: 0.5em;
+      font-size: 0.65em; }
   .tituloProductos {
     height: 3.07em;
-    padding-top: 0.52em;
-  }
-  .tituloProductos h2 {
-    font-size: 1.3em;
-    padding-top: 0.26em;
-  }
+    padding-top: 0.52em; }
+    .tituloProductos h2 {
+      font-size: 1.3em;
+      padding-top: 0.26em; }
   .tarjetaProductos {
     height: 25em;
     width: 13em;
-    margin: 1em 0;
-  }
-  .tarjetaProductos img {
-    width: 11.5em;
-  }
-  .tarjetaProductos p {
-    padding: 0.2em;
-    font-size: 0.85em;
-  }
-  .tarjetaProductos input {
-    padding: 0.4em;
-    font-size: 0.85em;
-  }
+    margin: 1em 0; }
+    .tarjetaProductos img {
+      width: 11.5em; }
+    .tarjetaProductos p {
+      padding: 0.2em;
+      font-size: 0.85em; }
+    .tarjetaProductos input {
+      padding: 0.4em;
+      font-size: 0.85em; }
   .precioProductos {
     padding-top: 0.5em;
-    font-size: 1.3em;
-  }
-}
+    font-size: 1.3em; } }
 
 @media (max-width: 320px) {
   .barraProductos {
     height: 7em;
-    padding-bottom: 1em;
-  }
-  .barraProductos p {
-    padding: 0.2em;
-    font-size: 0.7em;
-  }
-  .barraProductos input {
-    padding: 0.3em;
-    font-size: 0.6em;
-    width: 10em;
-    margin: 0 auto;
-  }
-  .barraProductos button {
-    padding: 0.5em;
-    font-size: 0.6em;
-  }
+    padding-bottom: 1em; }
+    .barraProductos p {
+      padding: 0.2em;
+      font-size: 0.7em; }
+    .barraProductos input {
+      padding: 0.3em;
+      font-size: 0.6em;
+      width: 10em;
+      margin: 0 auto; }
+    .barraProductos button {
+      padding: 0.5em;
+      font-size: 0.6em; }
   .tituloProductos {
     height: 2.75em;
-    padding-top: 0.4em;
-  }
-  .tituloProductos h2 {
-    font-size: 1.15em;
-    padding-top: 0.2em;
-  }
+    padding-top: 0.4em; }
+    .tituloProductos h2 {
+      font-size: 1.15em;
+      padding-top: 0.2em; }
   .tarjetaProductos {
     height: 22em;
     width: 11em;
-    margin: 1em 0;
-  }
-  .tarjetaProductos img {
-    width: 10em;
-  }
-  .tarjetaProductos p {
-    padding: 0.2em;
-    font-size: 0.7em;
-  }
-  .tarjetaProductos input {
-    padding: 0.3em;
-    font-size: 0.7em;
-  }
+    margin: 1em 0; }
+    .tarjetaProductos img {
+      width: 10em; }
+    .tarjetaProductos p {
+      padding: 0.2em;
+      font-size: 0.7em; }
+    .tarjetaProductos input {
+      padding: 0.3em;
+      font-size: 0.7em; }
   .precioProductos {
     padding-top: 0.5em;
-    font-size: 1.2em;
-  }
-}
+    font-size: 1.2em; } }
 
 .itemRecomendaciones, .descripcionVideo {
   width: 100%;
@@ -853,249 +679,178 @@ footer .redes img:hover {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  animation: aparicion 2s;
-}
-
-.itemRecomendaciones .numero, .descripcionVideo .numero {
-  font-size: 2em;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  padding: 0 0.5em;
-  background-color: rgba(198, 238, 186, 0.75);
-}
-
-.itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
-  font-size: 1.5em;
-  padding: 2em;
-}
-
-.itemRecomendaciones iframe, .descripcionVideo iframe {
-  width: 40em;
-  height: 25em;
-  border: none;
-}
-
-.itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
-  padding: 1.5em 0;
-  font-size: 1.3em;
-  font-style: italic;
-}
+  animation: aparicion 2s; }
+  .itemRecomendaciones .numero, .descripcionVideo .numero {
+    font-size: 2em;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: 0 0.5em;
+    background-color: rgba(198, 238, 186, 0.75); }
+  .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
+    font-size: 1.5em;
+    padding: 2em; }
+  .itemRecomendaciones iframe, .descripcionVideo iframe {
+    width: 40em;
+    height: 25em;
+    border: none; }
+  .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
+    padding: 1.5em 0;
+    font-size: 1.3em;
+    font-style: italic; }
 
 .descripcionVideo {
   flex-direction: column;
-  padding: 2em 0;
-}
-
-.descripcionVideo p {
-  font-size: 1.2em;
-  padding: 0.25em;
-  margin: 0 auto;
-}
-
-.descripcionVideo p:last-child {
-  padding-bottom: 2em;
-}
-
-.descripcionVideo div {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
+  padding: 2em 0; }
+  .descripcionVideo p {
+    font-size: 1.2em;
+    padding: 0.25em;
+    margin: 0 auto; }
+  .descripcionVideo p:last-child {
+    padding-bottom: 2em; }
+  .descripcionVideo div {
+    display: flex;
+    width: 100%;
+    flex-direction: column; }
 
 @media (max-width: 1440px) {
   .itemRecomendaciones .numero, .descripcionVideo .numero {
-    font-size: 1.75em;
-  }
+    font-size: 1.75em; }
   .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
     font-size: 1.3em;
-    padding: 1.6em;
-  }
+    padding: 1.6em; }
   .itemRecomendaciones iframe, .descripcionVideo iframe {
     width: 35em;
     height: 20em;
-    border: none;
-  }
+    border: none; }
   .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
     padding: 1.3em 0;
-    font-size: 1.2em;
-  }
+    font-size: 1.2em; }
   .descripcionVideo {
-    padding: 1.75em 0;
-  }
-  .descripcionVideo p {
-    font-size: 1.1em;
-  }
-  .descripcionVideo p:last-child {
-    padding-bottom: 1.5em;
-  }
-}
+    padding: 1.75em 0; }
+    .descripcionVideo p {
+      font-size: 1.1em; }
+    .descripcionVideo p:last-child {
+      padding-bottom: 1.5em; } }
 
 @media (max-width: 1366px) {
   .itemRecomendaciones .numero, .descripcionVideo .numero {
-    font-size: 1.4em;
-  }
+    font-size: 1.4em; }
   .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
     font-size: 1.1em;
-    padding: 1.2em;
-  }
+    padding: 1.2em; }
   .itemRecomendaciones iframe, .descripcionVideo iframe {
     width: 17.5em;
     height: 32.5em;
-    border: none;
-  }
+    border: none; }
   .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
     padding: 1.1em 0;
-    font-size: 1.1em;
-  }
+    font-size: 1.1em; }
   .descripcionVideo {
-    padding: 1.4em 0;
-  }
-  .descripcionVideo p {
-    font-size: 1em;
-  }
-  .descripcionVideo p:last-child {
-    padding-bottom: 1.4em;
-  }
-}
+    padding: 1.4em 0; }
+    .descripcionVideo p {
+      font-size: 1em; }
+    .descripcionVideo p:last-child {
+      padding-bottom: 1.4em; } }
 
 @media (max-width: 720px) {
   .itemRecomendaciones .numero, .descripcionVideo .numero {
-    font-size: 1.75em;
-  }
+    font-size: 1.75em; }
   .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
     font-size: 1.5em;
-    padding: 1.75em;
-  }
+    padding: 1.75em; }
   .itemRecomendaciones iframe, .descripcionVideo iframe {
     width: 25em;
     height: 30em;
-    border: none;
-  }
+    border: none; }
   .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
     padding: 1.2em 0;
-    font-size: 1.3em;
-  }
+    font-size: 1.3em; }
   .descripcionVideo {
-    padding: 1.4em 0;
-  }
-  .descripcionVideo p {
-    font-size: 1.25em;
-  }
-  .descripcionVideo p:last-child {
-    padding-bottom: 2.25em;
-    text-align: center;
-  }
-}
+    padding: 1.4em 0; }
+    .descripcionVideo p {
+      font-size: 1.25em; }
+    .descripcionVideo p:last-child {
+      padding-bottom: 2.25em;
+      text-align: center; } }
 
 @media (max-width: 375px) {
   .itemRecomendaciones .numero, .descripcionVideo .numero {
-    font-size: 1em;
-  }
+    font-size: 1em; }
   .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
     font-size: 0.9em;
-    padding: 1.25em;
-  }
+    padding: 1.25em; }
   .itemRecomendaciones iframe, .descripcionVideo iframe {
     height: 17.5em;
     width: 13.5em;
     width: 13.5em;
     height: 17.5em;
-    border: none;
-  }
+    border: none; }
   .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
     padding: 0.75em 0;
-    font-size: 0.8em;
-  }
+    font-size: 0.8em; }
   .descripcionVideo {
     padding: 0.5em;
-    margin: 0 auto;
-  }
-  .descripcionVideo p {
-    font-size: 0.65em;
-  }
-  .descripcionVideo p:last-child {
-    padding-bottom: 1.75em;
-  }
-}
+    margin: 0 auto; }
+    .descripcionVideo p {
+      font-size: 0.65em; }
+    .descripcionVideo p:last-child {
+      padding-bottom: 1.75em; } }
 
 @media (max-width: 320px) {
   .itemRecomendaciones .numero, .descripcionVideo .numero {
-    font-size: 0.9em;
-  }
+    font-size: 0.9em; }
   .itemRecomendaciones .textoNumero, .descripcionVideo .textoNumero {
     font-size: 0.8em;
-    padding: 1.2em;
-  }
+    padding: 1.2em; }
   .itemRecomendaciones iframe, .descripcionVideo iframe {
     height: 15em;
     width: 12.5em;
     width: 12.5em;
     height: 15em;
-    border: none;
-  }
+    border: none; }
   .itemRecomendaciones #introduccionVideo, .descripcionVideo #introduccionVideo {
     padding: 0.75em 0;
-    font-size: 0.72em;
-  }
+    font-size: 0.72em; }
   .descripcionVideo {
     padding: 0.25em 0;
-    margin: 0 auto;
-  }
-  .descripcionVideo p {
-    font-size: 0.58em;
-  }
-  .descripcionVideo p:last-child {
-    padding-bottom: 1.6em;
-  }
-}
+    margin: 0 auto; }
+    .descripcionVideo p {
+      font-size: 0.58em; }
+    .descripcionVideo p:last-child {
+      padding-bottom: 1.6em; } }
 
 .nosotros {
-  display: grid;
-}
-
-.nosotros h2 {
-  font-size: 2.5em;
-  padding: 2.5em 0;
-  margin: 0 auto;
-  animation: aparicion 1s;
-}
+  display: grid; }
+  .nosotros h2 {
+    font-size: 2.5em;
+    padding: 2.5em 0;
+    margin: 0 auto;
+    animation: aparicion 1s; }
 
 #gianmarco {
-  animation: aparicion 1.5s;
-}
+  animation: aparicion 1.5s; }
 
 #lorenzo {
-  animation: aparicion 2.5s;
-}
+  animation: aparicion 2.5s; }
 
 #diego {
-  animation: aparicion 3.5s;
-}
+  animation: aparicion 3.5s; }
 
 .imagenesNosotros {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 30em);
   justify-content: space-evenly;
-  align-items: center;
-}
-
-.imagenesNosotros img {
-  width: 30em;
-  transition: all 0.3s ease;
-}
-
-.imagenesNosotros img:hover {
-  width: 31.5em;
-}
-
-.imagenesNosotros figure {
-  padding: 1em 0 3.5em 0;
-}
-
-.imagenesNosotros figure figcaption p {
-  text-align: center;
-}
+  align-items: center; }
+  .imagenesNosotros img {
+    width: 30em;
+    transition: all 0.3s ease; }
+  .imagenesNosotros img:hover {
+    width: 31.5em; }
+  .imagenesNosotros figure {
+    padding: 1em 0 3.5em 0; }
+    .imagenesNosotros figure figcaption p {
+      text-align: center; }
 
 .descripcionNosotros {
   width: 85% !important;
@@ -1105,522 +860,370 @@ footer .redes img:hover {
   flex-direction: column;
   padding-bottom: 3em;
   margin: 0 auto;
-  animation: aparicion 4s;
-}
-
-.descripcionNosotros p {
-  font-size: 1.3em;
-  padding: 0.2em;
-}
-
-.descripcionNosotros p:first-child {
-  font-size: 1.5em;
-  font-style: italic;
-}
+  animation: aparicion 4s; }
+  .descripcionNosotros p {
+    font-size: 1.3em;
+    padding: 0.2em; }
+  .descripcionNosotros p:first-child {
+    font-size: 1.5em;
+    font-style: italic; }
 
 @media (max-width: 1440px) {
   .nosotros h2 {
     font-size: 2.25em;
-    padding: 2.25em 0;
-  }
+    padding: 2.25em 0; }
   .imagenesNosotros {
-    grid-template-columns: repeat(3, 25em);
-  }
-  .imagenesNosotros img {
-    width: 25em;
-    transition: all 0.3s ease;
-  }
-  .imagenesNosotros img:hover {
-    width: 26em;
-  }
-  .imagenesNosotros figure {
-    padding: 0.9em 0 3.25em 0;
-  }
-  .imagenesNosotros figure figcaption p {
-    font-size: 1.2em;
-  }
+    grid-template-columns: repeat(3, 25em); }
+    .imagenesNosotros img {
+      width: 25em;
+      transition: all 0.3s ease; }
+    .imagenesNosotros img:hover {
+      width: 26em; }
+    .imagenesNosotros figure {
+      padding: 0.9em 0 3.25em 0; }
+      .imagenesNosotros figure figcaption p {
+        font-size: 1.2em; }
   .descripcionNosotros {
-    padding-bottom: 2.7em;
-  }
-  .descripcionNosotros p {
-    font-size: 1em;
-    padding: 0.175em;
-  }
-  .descripcionNosotros p:first-child {
-    font-size: 1.25em;
-  }
-}
+    padding-bottom: 2.7em; }
+    .descripcionNosotros p {
+      font-size: 1em;
+      padding: 0.175em; }
+    .descripcionNosotros p:first-child {
+      font-size: 1.25em; } }
 
 @media (max-width: 1366px) {
   .nosotros h2 {
     font-size: 1.8em;
-    padding: 1.8em 0;
-  }
+    padding: 1.8em 0; }
   .imagenesNosotros {
-    grid-template-columns: repeat(3, 21.4em);
-  }
-  .imagenesNosotros img {
-    width: 21.4em;
-    transition: all 0.3s ease;
-  }
-  .imagenesNosotros img:hover {
-    width: 22em;
-  }
-  .imagenesNosotros figure {
-    padding: 0.715em 0 2.5em 0;
-  }
-  .imagenesNosotros figure figcaption p {
-    font-size: 0.93em;
-  }
+    grid-template-columns: repeat(3, 21.4em); }
+    .imagenesNosotros img {
+      width: 21.4em;
+      transition: all 0.3s ease; }
+    .imagenesNosotros img:hover {
+      width: 22em; }
+    .imagenesNosotros figure {
+      padding: 0.715em 0 2.5em 0; }
+      .imagenesNosotros figure figcaption p {
+        font-size: 0.93em; }
   .descripcionNosotros {
-    padding-bottom: 2.14em;
-  }
-  .descripcionNosotros p {
-    font-size: 0.93em;
-    padding: 0.142em;
-  }
-  .descripcionNosotros p:first-child {
-    font-size: 1.2em;
-  }
-}
+    padding-bottom: 2.14em; }
+    .descripcionNosotros p {
+      font-size: 0.93em;
+      padding: 0.142em; }
+    .descripcionNosotros p:first-child {
+      font-size: 1.2em; } }
 
 @media (max-width: 720px) {
   .nosotros h2 {
     font-size: 2em;
-    padding: 2em 0;
-  }
+    padding: 2em 0; }
   .imagenesNosotros {
     display: flex;
     flex-direction: column;
     justify-items: space-evenly;
-    align-content: center;
-  }
-  .imagenesNosotros img {
-    width: 28em;
-    transition: all 0.3s ease;
-  }
-  .imagenesNosotros img:hover {
-    width: 29em;
-  }
-  .imagenesNosotros figure {
-    padding: 0.8em 0 2.75em 0;
-  }
-  .imagenesNosotros figure figcaption p {
-    font-size: 1.15em;
-  }
+    align-content: center; }
+    .imagenesNosotros img {
+      width: 28em;
+      transition: all 0.3s ease; }
+    .imagenesNosotros img:hover {
+      width: 29em; }
+    .imagenesNosotros figure {
+      padding: 0.8em 0 2.75em 0; }
+      .imagenesNosotros figure figcaption p {
+        font-size: 1.15em; }
   .descripcionNosotros {
-    padding-bottom: 2.5em;
-  }
-  .descripcionNosotros p {
-    font-size: 1.25em;
-    padding: 0.15em;
-  }
-  .descripcionNosotros p:first-child {
-    font-size: 1.4em;
-  }
-}
+    padding-bottom: 2.5em; }
+    .descripcionNosotros p {
+      font-size: 1.25em;
+      padding: 0.15em; }
+    .descripcionNosotros p:first-child {
+      font-size: 1.4em; } }
 
 @media (max-width: 375px) {
   .nosotros h2 {
     font-size: 1.05em;
-    padding: 1.05em 0;
-  }
+    padding: 1.05em 0; }
   .imagenesNosotros img {
     width: 15em;
-    transition: all 0.3s ease;
-  }
+    transition: all 0.3s ease; }
   .imagenesNosotros img:hover {
-    width: 15.5em;
-  }
+    width: 15.5em; }
   .imagenesNosotros figure {
-    padding: 0.417em 0 1.45em 0;
-  }
-  .imagenesNosotros figure figcaption p {
-    font-size: 0.6em;
-  }
+    padding: 0.417em 0 1.45em 0; }
+    .imagenesNosotros figure figcaption p {
+      font-size: 0.6em; }
   .descripcionNosotros {
-    padding-bottom: 1.25em;
-  }
-  .descripcionNosotros p {
-    font-size: 0.7em;
-    padding: 0.085em;
-  }
-  .descripcionNosotros p:first-child {
-    font-size: 0.8em;
-  }
-}
+    padding-bottom: 1.25em; }
+    .descripcionNosotros p {
+      font-size: 0.7em;
+      padding: 0.085em; }
+    .descripcionNosotros p:first-child {
+      font-size: 0.8em; } }
 
 @media (max-width: 320px) {
   .nosotros h2 {
     font-size: 0.9em;
-    padding: 0.9em 0;
-  }
+    padding: 0.9em 0; }
   .imagenesNosotros img {
     width: 12.5em;
-    transition: all 0.3s ease;
-  }
+    transition: all 0.3s ease; }
   .imagenesNosotros img:hover {
-    width: 13em;
-  }
+    width: 13em; }
   .imagenesNosotros figure {
-    padding: 0.355em 0 1.24em 0;
-  }
-  .imagenesNosotros figure figcaption p {
-    font-size: 0.51em;
-  }
+    padding: 0.355em 0 1.24em 0; }
+    .imagenesNosotros figure figcaption p {
+      font-size: 0.51em; }
   .descripcionNosotros {
-    padding-bottom: 1em 0;
-  }
-  .descripcionNosotros p {
-    font-size: 0.65em;
-    padding: 0.07em;
-  }
-  .descripcionNosotros p:first-child {
-    font-size: 0.675em;
-  }
-}
+    padding-bottom: 1em 0; }
+    .descripcionNosotros p {
+      font-size: 0.65em;
+      padding: 0.07em; }
+    .descripcionNosotros p:first-child {
+      font-size: 0.675em; } }
 
 .contacto {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-
-.contacto h2 {
-  font-size: 2.5em;
-  text-align: center;
-  margin: 0 auto;
-  padding: 2em;
-  animation: aparicion 1s;
-}
+  flex-direction: column; }
+  .contacto h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+    animation: aparicion 1s; }
 
 .informacionContacto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5em;
-  animation: aparicion 2.5s;
-}
+  animation: aparicion 2.5s; }
 
 .formularioContacto, .mapaContacto {
   margin: 0 2em;
-  justify-content: center;
-}
-
-.formularioContacto fieldset, .mapaContacto fieldset {
-  width: 40em;
-  height: 30em;
-  border: 3px solid #000;
-}
-
-.formularioContacto fieldset legend, .mapaContacto fieldset legend {
-  text-align: center;
-  padding: 1em 0;
-  font-size: 1.5em;
-}
-
-.formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-  justify-content: center;
-  padding: 1em;
-}
-
-.formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
-  width: 10em;
-}
-
-.formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
-  width: 12.5em;
-}
-
-.formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
-  width: 15em;
-}
-
-.formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-  justify-content: center;
-  padding: 2em;
-}
-
-.formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
-  padding: 0 1.45em;
-}
-
-.formularioContacto fieldset .botonesFormulario, .mapaContacto fieldset .botonesFormulario {
-  margin: 0 auto;
-}
-
-.formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
-  border-color: #fff;
-  background-color: #c1ff8f;
-  color: #000;
-  padding: 0.5em;
-  transition: all 0.3s ease;
-  margin: 0 2em;
-}
-
-.formularioContacto fieldset .botonesFormulario button:hover, .mapaContacto fieldset .botonesFormulario button:hover {
-  background-color: #8ed653;
-}
+  justify-content: center; }
+  .formularioContacto fieldset, .mapaContacto fieldset {
+    width: 40em;
+    height: 30em;
+    border: 3px solid #000; }
+    .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+      text-align: center;
+      padding: 1em 0;
+      font-size: 1.5em; }
+    .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+      justify-content: center;
+      padding: 1em; }
+    .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
+      width: 10em; }
+    .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
+      width: 12.5em; }
+    .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
+      width: 15em; }
+    .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+      justify-content: center;
+      padding: 2em; }
+    .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
+      padding: 0 1.45em; }
+    .formularioContacto fieldset .botonesFormulario, .mapaContacto fieldset .botonesFormulario {
+      margin: 0 auto; }
+      .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
+        border-color: #fff;
+        background-color: #c1ff8f;
+        color: #000;
+        padding: 0.5em;
+        transition: all 0.3s ease;
+        margin: 0 2em; }
+      .formularioContacto fieldset .botonesFormulario button:hover, .mapaContacto fieldset .botonesFormulario button:hover {
+        background-color: #8ed653; }
 
 .mapaContacto iframe {
   width: 40em;
   height: 30em;
-  border: 3px solid #000;
-}
+  border: 3px solid #000; }
 
 @media (max-width: 1440px) {
   .contacto h2 {
     font-size: 2.1em;
-    padding: 1.6em;
-  }
+    padding: 1.6em; }
   .formularioContacto, .mapaContacto {
-    margin: 0 1.6em;
-  }
-  .formularioContacto fieldset, .mapaContacto fieldset {
-    width: 32.5em;
-    height: 27.5em;
-    width: 32.5em;
-    height: 27.5em;
-    border: 3px solid #000;
-  }
-  .formularioContacto fieldset legend, .mapaContacto fieldset legend {
-    padding: 0.8em 0;
-    font-size: 1.25em;
-  }
-  .formularioContacto fieldset label, .mapaContacto fieldset label {
-    font-size: 0.85em;
-  }
-  .formularioContacto fieldset input, .mapaContacto fieldset input {
-    font-size: 0.85em;
-  }
-  .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-    padding: 0.75em;
-  }
-  .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
-    width: 7.5em;
-  }
-  .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
-    width: 9em;
-  }
-  .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
-    width: 12.5em;
-  }
-  .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-    padding: 1.5em;
-  }
-  .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
-    padding: 0 0.5em;
-  }
-  .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
-    padding: 0.4em;
-    margin: 0 1.75em;
-  }
+    margin: 0 1.6em; }
+    .formularioContacto fieldset, .mapaContacto fieldset {
+      width: 32.5em;
+      height: 27.5em;
+      width: 32.5em;
+      height: 27.5em;
+      border: 3px solid #000; }
+      .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+        padding: 0.8em 0;
+        font-size: 1.25em; }
+      .formularioContacto fieldset label, .mapaContacto fieldset label {
+        font-size: 0.85em; }
+      .formularioContacto fieldset input, .mapaContacto fieldset input {
+        font-size: 0.85em; }
+      .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+        padding: 0.75em; }
+      .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
+        width: 7.5em; }
+      .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
+        width: 9em; }
+      .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
+        width: 12.5em; }
+      .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+        padding: 1.5em; }
+      .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
+        padding: 0 0.5em; }
+      .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
+        padding: 0.4em;
+        margin: 0 1.75em; }
   .mapaContacto iframe {
     width: 32.5em;
     height: 27.5em;
-    border: 3px solid #000;
-  }
-}
+    border: 3px solid #000; } }
 
 @media (max-width: 1366px) {
   .contacto h2 {
     font-size: 1.775em;
-    padding: 1.42em;
-  }
+    padding: 1.42em; }
   .formularioContacto, .mapaContacto {
-    margin: 0 1.42em;
-  }
-  .formularioContacto fieldset, .mapaContacto fieldset {
-    width: 30em;
-    height: 22.5em;
-    border: 3px solid #000;
-  }
-  .formularioContacto fieldset legend, .mapaContacto fieldset legend {
-    padding: 0.711em 0;
-    font-size: 1.065em;
-  }
-  .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-    padding: 0.711em;
-  }
-  .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
-    width: 7.11em;
-  }
-  .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
-    width: 8.875em;
-  }
-  .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
-    width: 10.665em;
-  }
-  .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-    padding: 0.75em;
-  }
-  .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
-    padding: 0 0.1em;
-  }
-  .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
-    padding: 0.36em;
-    margin: 0 1.42em;
-  }
+    margin: 0 1.42em; }
+    .formularioContacto fieldset, .mapaContacto fieldset {
+      width: 30em;
+      height: 22.5em;
+      border: 3px solid #000; }
+      .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+        padding: 0.711em 0;
+        font-size: 1.065em; }
+      .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+        padding: 0.711em; }
+      .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
+        width: 7.11em; }
+      .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
+        width: 8.875em; }
+      .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
+        width: 10.665em; }
+      .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+        padding: 0.75em; }
+      .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
+        padding: 0 0.1em; }
+      .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
+        padding: 0.36em;
+        margin: 0 1.42em; }
   .mapaContacto iframe {
     width: 30em;
     height: 22.5em;
-    border: 3px solid #000;
-  }
-}
+    border: 3px solid #000; } }
 
 @media (max-width: 720px) {
   .informacionContacto {
     width: 100%;
     flex-wrap: wrap;
-    padding: 3em;
-  }
+    padding: 3em; }
   .contacto h2 {
     font-size: 2em;
-    padding: 1.5em;
-  }
+    padding: 1.5em; }
   .formularioContacto, .mapaContacto {
     width: 100% !important;
-    padding: 1em 0;
-  }
-  .formularioContacto fieldset, .mapaContacto fieldset {
-    width: 25em;
-    height: 30em;
-    border: 3px solid #000;
-    margin: 0 auto;
-  }
-  .formularioContacto fieldset legend, .mapaContacto fieldset legend {
-    text-align: center;
-    padding: 1em 0;
-    font-size: 1.5em;
-  }
-  .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-    padding: 1em;
-  }
-  .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-    padding: 1em;
-  }
+    padding: 1em 0; }
+    .formularioContacto fieldset, .mapaContacto fieldset {
+      width: 25em;
+      height: 30em;
+      border: 3px solid #000;
+      margin: 0 auto; }
+      .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1.5em; }
+      .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+        padding: 1em; }
+      .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+        padding: 1em; }
   .mapaContacto iframe {
     width: 25em;
     height: 30em;
     border: 3px solid #000;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
 
 @media (max-width: 375px) {
   .informacionContacto {
-    padding: 1.5em;
-  }
+    padding: 1.5em; }
   .contacto h2 {
     font-size: 1.2em;
-    padding: 0.75em;
-  }
+    padding: 0.75em; }
   .formularioContacto, .mapaContacto {
-    margin: 0 0.75em;
-  }
-  .formularioContacto fieldset, .mapaContacto fieldset {
-    width: 15em;
-    height: 22.5em;
-    border: 3px solid #000;
-  }
-  .formularioContacto fieldset legend, .mapaContacto fieldset legend {
-    padding: 0.4em 0;
-    font-size: 0.9em;
-  }
-  .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-    padding: 0.4em;
-  }
-  .formularioContacto fieldset label, .mapaContacto fieldset label {
-    font-size: 0.55em;
-  }
-  .formularioContacto fieldset input, .mapaContacto fieldset input {
-    padding: 0.2em;
-    font-size: 0.55em;
-  }
-  .formularioContacto fieldset button, .mapaContacto fieldset button {
-    font-size: 0.6em;
-  }
-  .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
-    width: 7em;
-  }
-  .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
-    width: 8.5em;
-  }
-  .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
-    width: 10em;
-  }
-  .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-    padding: 0.75em;
-  }
-  .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
-    padding: 0em;
-  }
-  .formularioContacto fieldset .checkboxesFormulario button, .mapaContacto fieldset .checkboxesFormulario button {
-    padding: 0.2em;
-  }
+    margin: 0 0.75em; }
+    .formularioContacto fieldset, .mapaContacto fieldset {
+      width: 15em;
+      height: 22.5em;
+      border: 3px solid #000; }
+      .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+        padding: 0.4em 0;
+        font-size: 0.9em; }
+      .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+        padding: 0.4em; }
+      .formularioContacto fieldset label, .mapaContacto fieldset label {
+        font-size: 0.55em; }
+      .formularioContacto fieldset input, .mapaContacto fieldset input {
+        padding: 0.2em;
+        font-size: 0.55em; }
+      .formularioContacto fieldset button, .mapaContacto fieldset button {
+        font-size: 0.6em; }
+      .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
+        width: 7em; }
+      .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
+        width: 8.5em; }
+      .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
+        width: 10em; }
+      .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+        padding: 0.75em; }
+      .formularioContacto fieldset .checkboxesFormulario, .mapaContacto fieldset .checkboxesFormulario {
+        padding: 0em; }
+        .formularioContacto fieldset .checkboxesFormulario button, .mapaContacto fieldset .checkboxesFormulario button {
+          padding: 0.2em; }
   .mapaContacto iframe {
     width: 15em;
     height: 22.5em;
-    border: 3px solid #000;
-  }
-}
+    border: 3px solid #000; } }
 
 @media (max-width: 320px) {
   .informacionContacto {
-    padding: 1.4em;
-  }
+    padding: 1.4em; }
   .contacto h2 {
     font-size: 1.1em;
-    padding: 0.65em;
-  }
+    padding: 0.65em; }
   .formularioContacto, .mapaContacto {
-    margin: 0 0.65em;
-  }
+    margin: 0 0.65em; }
   .formularioContacto fieldset, .mapaContacto fieldset {
     width: 13.5em;
     height: 21em;
     width: 13.5em;
     height: 21em;
-    border: 3px solid #000;
-  }
-  .formularioContacto fieldset legend, .mapaContacto fieldset legend {
-    padding: 0.325em 0;
-    font-size: 0.8em;
-  }
-  .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
-    padding: 0.325em;
-  }
-  .formularioContacto fieldset label, .mapaContacto fieldset label {
-    font-size: 0.5em;
-  }
-  .formularioContacto fieldset input, .mapaContacto fieldset input {
-    padding: 0.175em;
-    font-size: 0.5em;
-  }
-  .formularioContacto fieldset button, .mapaContacto fieldset button {
-    font-size: 0.525em;
-  }
-  .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
-    width: 6em;
-  }
-  .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
-    width: 7.25em;
-  }
-  .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
-    width: 8.5em;
-  }
-  .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
-    padding: 0.65em;
-  }
-  .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
-    padding: 0.175em;
-  }
+    border: 3px solid #000; }
+    .formularioContacto fieldset legend, .mapaContacto fieldset legend {
+      padding: 0.325em 0;
+      font-size: 0.8em; }
+    .formularioContacto fieldset .form-group, .mapaContacto fieldset .form-group {
+      padding: 0.325em; }
+    .formularioContacto fieldset label, .mapaContacto fieldset label {
+      font-size: 0.5em; }
+    .formularioContacto fieldset input, .mapaContacto fieldset input {
+      padding: 0.175em;
+      font-size: 0.5em; }
+    .formularioContacto fieldset button, .mapaContacto fieldset button {
+      font-size: 0.525em; }
+    .formularioContacto fieldset #inputName, .mapaContacto fieldset #inputName {
+      width: 6em; }
+    .formularioContacto fieldset #inputSurname, .mapaContacto fieldset #inputSurname {
+      width: 7.25em; }
+    .formularioContacto fieldset #inputEmail3, .mapaContacto fieldset #inputEmail3 {
+      width: 8.5em; }
+    .formularioContacto fieldset .form-check, .mapaContacto fieldset .form-check {
+      padding: 0.65em; }
+    .formularioContacto fieldset .botonesFormulario button, .mapaContacto fieldset .botonesFormulario button {
+      padding: 0.175em; }
   .mapaContacto iframe {
     width: 13.5em;
     height: 21em;
-    border: 3px solid #000;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+    border: 3px solid #000; } }

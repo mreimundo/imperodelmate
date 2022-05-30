@@ -26,21 +26,29 @@
             </ul>
         </nav>
         <div id="navMobile" class="dropdown">
-            <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-primary btn-secondary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <img id="hamburgerIcon" src="../assets/images/hamburgerMenu.png"></img>
             </button>
-            <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
-                <li><a class="dropdown-item" href="./recomendaciones.html">Recomendaciones</a></li>
-                <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
-            </ul>
+            <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="text-center">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./recomendaciones.html">Recomendaciones</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main class="container-fluid">
         <div class="row">
-            <h2 class="text-center">Sugerencias del mate, ¡en texto y video!</h2>
+            <h2 class="text-center" id="tituloRecomendaciones">Sugerencias del mate, en texto y video</h2>
         </div>
         <div class="itemRecomendaciones">
             <div class="row">
@@ -53,14 +61,12 @@
                 <iframe src="https://www.youtube.com/embed/B5KmUgxFRu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
             <div class="row col-xl-8 col-sm-10 col-xs-12">
-                <p class="text-center" id="introduccionVideo">Para empezar se muestra en el video el antes y el después de curar el mate y su diferencia. Ahora sí, vamos con los pasos:</p>
-                <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
-                    <div>
-                        <p>1: Rellena el mate con yerba húmeda, de lo posible usada</p>
-                        <p>2: Para la primera vez, añade agua caliente</p>
-                        <p>3: Pasadas las 24hs se cambia la yerba</p>
-                        <p>4: Se repiten los pasos anteriores hasta que la calabaza tenga un color uniforme.</p>
-                    </div>
+                <div class="descripcionVideo text-center row col-xl-8 col-sm-10 col-xs-12">
+                    <p>Una vez de seguir los pasos a continuación, comprobá que el mate se curó correctamente como se muestra luego en el video</p>
+                    <p>1: Rellena el mate con yerba húmeda, de lo posible usada</p>
+                    <p>2: Para la primera vez, añade agua caliente</p>
+                    <p>3: Pasadas las 24hs se cambia la yerba</p>
+                    <p>4: Se repiten los pasos anteriores hasta que la calabaza tenga un color uniforme.</p>
                 </div>
             </div>
         </div>
@@ -74,15 +80,12 @@
             <div class="row">
                 <iframe src="https://www.youtube.com/embed/q9e6pNKYRVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
             </div>
-            <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
-                <div class="descripcionVideo row col-xl-8 col-sm-10 col-xs-12">
-                    <div>
-                        <p>1: Agrega la yerba rellenando el mate hasta 3/4 de su capacidad</p>
-                        <p>2: Agita el mate de un lado para repartir la yerba</p>
-                        <p>3: Vierte un poco de agua en el lado vacío e inserta la bombilla</p>
-                        <p>4: Completa la preparación echando más agua casi hasta el borde</p>
-                    </div>
-                </div>
+            <div class="descripcionVideo text-center row col-xl-8 col-sm-10 col-xs-12">
+                <p>Previo a los pasos, asegurate que el agua esté entre 80° y 90° y que el termo esté abierto correctamente</p>
+                <p>1: Agrega la yerba rellenando el mate hasta 3/4 de su capacidad</p>
+                <p>2: Agita el mate de un lado para repartir la yerba</p>
+                <p>3: Vierte un poco de agua en el lado vacío e inserta la bombilla</p>
+                <p>4: Completa la preparación echando más agua casi hasta el borde</p>
             </div>
     </main>
     <footer class="text-center">

@@ -2,7 +2,7 @@
     display: grid;
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.75em;
         padding: 2.5em 0;
         margin: 0 auto;
         animation: aparicion 1s;
@@ -34,13 +34,14 @@
     }
 
     img:hover {
-        width: 31.5em;
+        transform: scale(1.05);
     }
 
     figure {
         padding: 1em 0 3.5em 0;
         figcaption {
             p {
+                padding-top: 1em;
                 text-align: center;
             }
         }
@@ -53,18 +54,19 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 3em;
+    padding-bottom: 2.5em;
     margin: 0 auto;
     animation: aparicion 4s;
 
     p {
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding: 0.2em;
     }
 
     p:first-child {
-        font-size: 1.5em;
+        font-size: 1.75em;
         font-style: italic;
+        padding-bottom: 1.5em;
     }
 }
 
@@ -85,7 +87,7 @@
         }
 
         img:hover {
-            width: 26em;
+            transform: scale(1.05);
         }
 
         figure {
@@ -93,22 +95,23 @@
 
             figcaption {
                 p {
-                    font-size: 1.2em;
+                    font-size: 1em;
                 }
             }
         }
     }
 
     .descripcionNosotros {
-        padding-bottom: 2.7em;
+        padding-bottom: 2em;
 
         p {
-            font-size: 1em;
+            font-size: 1.125em;
             padding: 0.175em;
         }
 
         p:first-child {
-            font-size: 1.25em;
+            font-size: 1.5em;
+            padding-bottom: 1.25em;
         }
     }
 
@@ -117,7 +120,7 @@
 @media (max-width: 1366px) {
     .nosotros {
         h2 {
-            font-size: 1.8em;
+            font-size: 2em;
             padding: 1.8em 0;
         }
     }
@@ -127,10 +130,6 @@
         img {
             width: 21.4em;
             transition: all 0.3s ease;
-        }
-
-        img:hover {
-            width: 22em;
         }
 
         figure {
@@ -148,12 +147,12 @@
         padding-bottom: 2.14em;
 
         p {
-            font-size: 0.93em;
+            font-size: 1.05em;
             padding: 0.142em;
         }
 
         p:first-child {
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
     }
         
@@ -163,7 +162,7 @@
     .nosotros {
 
         h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             padding: 2em 0;
         }
     }
@@ -180,7 +179,7 @@
         }
 
         img:hover {
-            width: 29em;
+            transform: scale(1.05);
         }
 
         figure {
@@ -198,12 +197,12 @@
         padding-bottom: 2.5em;
 
         p {
-            font-size: 1.25em;
+            font-size: 1.2em;
             padding: 0.15em;
         }
 
         p:first-child {
-            font-size: 1.4em;
+            font-size: 1.5em;
         }
     }
     
@@ -212,7 +211,7 @@
 @media (max-width: 375px) {
     .nosotros {
         h2 {
-            font-size: 1.05em;
+            font-size: 1.25em;
             padding: 1.05em 0;
         }
     }
@@ -224,7 +223,7 @@
         }
 
         img:hover {
-            width: 15.5em;
+            transform: scale(1.05);
         }
 
         figure {
@@ -242,7 +241,7 @@
         padding-bottom: 1.25em;
 
         p {
-            font-size: 0.7em;
+            font-size: 0.61em;
             padding: 0.085em;
         }
 
@@ -253,9 +252,10 @@
 }
 
 @media (max-width: 320px) {
+
     .nosotros {
         h2 {
-            font-size: 0.9em;
+            font-size: 1.1em;
             padding: 0.9em 0;
         }
     }
@@ -267,7 +267,7 @@
         }
 
         img:hover {
-            width: 13em;
+            transform: scale(1.05);
         }
 
         figure {
@@ -285,7 +285,7 @@
         padding-bottom: 1em 0;
 
         p {
-            font-size: 0.65em;
+            font-size: 0.565em;
             padding: 0.07em;
         }
 

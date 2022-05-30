@@ -1,5 +1,5 @@
-@mixin camposCuadro ($ancho, $alto, $contacto) {
+@mixin camposCuadro ($ancho, $alto, $borde) {
     width: $ancho;
     height: $alto;
-    border: $contacto;
+    border: $borde;
 }

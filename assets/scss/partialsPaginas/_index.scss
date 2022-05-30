@@ -11,30 +11,30 @@
 .textoIndex {
     display: block;
     position: relative;
-    bottom: 12em;
+    bottom: 12.5em;
     margin: 0 auto;
     text-align: center;
     padding: 3em;
     color: $colorBlanco;
     h2 {
-        padding-bottom: 5.5em !important;
-        font-size: 3em;
+        padding-bottom: 4.5em !important;
+        font-size: 3.25em;
         font-family: 'Roboto Slab', serif !important;
         animation: aparicion 1.5s;
     }
     p {
-        font-size: 1.5em;
+        font-size: 1.6em;
         padding-bottom: 0.7em;
         font-family: 'Roboto Slab', serif;
         animation: aparicion 1.5s;
     }
     a {
         position: inherit;
-        top: 12em;
+        top: 10em;
         border: 0.1em solid groove;
         border-radius: 1em;
         padding: 0.5em;
-        font-size: 1.5em;
+        font-size: 1.6em;
         background-color: $colorPrincipal2Opaco;
         font-family: 'Roboto Slab', serif;
         transition: all 0.3s ease;
@@ -42,7 +42,6 @@
     }
     a:hover {
         box-shadow: 0 0.1rem 0.4rem $colorNegroOpaco;
-        font-size: 1.6em;
     }
 }
 
@@ -55,19 +54,17 @@
         margin: 0 auto;
         padding: 2.25em;
         h2 {
-            padding-bottom: 4.125em;
-            font-size: 2.25em;
+            padding-bottom: 3.5em !important;
+            font-size: 2.75em;
         }
         p {
-            font-size: 1.125em;
-            padding-bottom: 0.525em;
+            font-size: 1.3em;
+            padding-bottom: 0.5em;
         }
         a {
-            top: 9em;
-            border: 0.075em solid groove;
-            border-radius: 0.75em;
+            top: 10em;
             padding: 0.375em;
-            font-size: 1.125em; 
+            font-size: 1.3em; 
         }
     }
 }
@@ -83,18 +80,18 @@
         padding: 2.134em;
         h2 {
             padding-bottom: 3.91em;
-            font-size: 2.1343em;
+            font-size: 2.5em;
         }
         p {
-            font-size: 1.067em;
+            font-size: 1.225em;
             padding-bottom: 0.498em;
         }
         a {
             top: 8.5375em;
-            border: 0.071em solid groove;
-            border-radius: 0.71em;
-            padding: 0.355em;
-            font-size: 1.067em; 
+            border: 1em solid groove;
+            border-radius: 0.85em;
+            padding: 0.45em;
+            font-size: 1.225em; 
         }
     }
 }
@@ -119,7 +116,7 @@
             border: 0.1em solid groove;
             border-radius: 1em;
             padding: 0.5em;
-            font-size: 1.75em;
+            font-size: 1.5em;
         }
     }
     
@@ -136,7 +133,7 @@
         padding: 1.25em;
         h2 {
             padding-bottom: 2em;
-            font-size: 1.55em;
+            font-size: 1.65em;
         }
         p {
             font-size: 0.72em;
@@ -148,7 +145,7 @@
             border: 0.1em solid groove;
             border-radius: 1em;
             padding: 0.5em;
-            font-size: 0.911em;
+            font-size: 0.8em;
         }
     }
 }
@@ -163,7 +160,7 @@
         padding: 1em;
         h2 {
             padding-bottom: 2.5em !important;
-            font-size: 1.32em;
+            font-size: 1.45em;
         }
         p {
             font-size: 0.6em;

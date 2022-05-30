@@ -1,3 +1,7 @@
+#tituloRecomendaciones {
+    font-size: 2.75em;
+}
+
 .itemRecomendaciones {
     width: map-get($containerPrincipal, ancho);
     display: map-get($containerPrincipal, disposicion);
@@ -15,18 +19,12 @@
     }
 
     .textoNumero {
-        font-size: 1.5em;
+        font-size: 1.65em;
         padding: 2em;
     }
 
     iframe {
         @include camposCuadro(40em, 25em, none);
-    }
-
-    #introduccionVideo {
-        padding: 1.5em 0;
-        font-size: 1.3em;
-        font-style: italic;
     }
 } 
 
@@ -36,14 +34,20 @@
     flex-direction: column;
     padding: 2em 0;
 
+    p:first-child {
+        padding: 1em 0 1.5em 0;
+        font-size: 1.4em;
+        font-style: italic;
+    }
+
     p {
-        font-size: 1.2em;
+        font-size: 1.3em;
         padding: 0.25em;
         margin: 0 auto;
     }
 
     p:last-child {
-        padding-bottom: 2em;
+        padding-bottom: 2.5em;
     }
 
     div {
@@ -55,29 +59,32 @@
 
 
 @media (max-width: 1440px) {
+    #tituloRecomendaciones {
+        font-size: 2.25em;
+    }
     .itemRecomendaciones {
         .numero {
             font-size: 1.75em;
         }
 
         .textoNumero {
-            font-size: 1.3em;
+            font-size: 1.4em;
             padding: 1.6em;
         }
 
         iframe {
             @include camposCuadro(35em, 20em, none);
         }
-
-        #introduccionVideo {
-            padding: 1.3em 0;
-            font-size: 1.2em;
-        }
     }
     
     
     .descripcionVideo {
         padding: 1.75em 0;
+        p:first-child {
+            padding: 1.3em 0;
+            font-size: 1.15em;
+        }
+        
         p {
             font-size: 1.1em;
         }
@@ -90,28 +97,31 @@
 }
 
 @media (max-width: 1366px) {
+    #tituloRecomendaciones {
+        font-size: 2em;
+    }
     .itemRecomendaciones {
         .numero {
-            font-size: 1.4em;
+            font-size: 1.6em;
         }
 
         .textoNumero {
-            font-size: 1.1em;
-            padding: 1.2em;
+            font-size: 1.25em;
+            padding: 1.3em;
         }
 
         iframe {
-            @include camposCuadro(17.5em, 32.5em, none);
-        }
-
-        #introduccionVideo {
-            padding: 1.1em 0;
-            font-size: 1.1em;
+            @include camposCuadro(32.5em, 17.5em, none);
         }
     } 
     
     .descripcionVideo {
         padding: 1.4em 0;
+
+        p:first-child{
+            padding: 1.1em 0;
+            font-size: 1.1em;
+        }
 
         p {
             font-size: 1em;
@@ -125,6 +135,9 @@
 }
 
 @media (max-width: 720px) {
+    #tituloRecomendaciones {
+        font-size: 2.5em;
+    }
     .itemRecomendaciones {
         .numero {
             font-size: 1.75em;
@@ -148,8 +161,12 @@
     .descripcionVideo {
         padding: 1.4em 0;
 
+        p:first-child {
+            font-size: 1.3em;
+        }
+
         p {
-            font-size: 1.25em;
+            font-size: 1.12em;
         }
 
         p:last-child {
@@ -160,6 +177,9 @@
 }
 
 @media (max-width: 375px) {
+    #tituloRecomendaciones {
+        font-size: 1.4em;
+    }
     .itemRecomendaciones{
         .numero {
             font-size: 1em;
@@ -186,8 +206,12 @@
         padding: 0.5em;
         margin: 0 auto;
 
+        p:first-child {
+            font-size: 0.75em;
+        }
+
         p {
-            font-size: 0.65em;
+            font-size: 0.675em;
         }
 
         p:last-child {
@@ -198,6 +222,9 @@
 }
 
 @media (max-width: 320px) {
+    #tituloRecomendaciones {
+        font-size: 1.25em;
+    }
     .itemRecomendaciones {
         .numero {
             font-size: 0.9em;
@@ -224,8 +251,12 @@
         padding: 0.25em 0;
         margin: 0 auto;
         
+        p:first-child {
+            font-size: 0.7em;
+        }
+        
         p {
-            font-size: 0.58em;
+            font-size: 0.6em;
         }
 
         p:last-child {

@@ -10,6 +10,7 @@
     p {
         padding: 0.5em;
         animation: aparicion 2.5s;
+        font-size: 1.25em;
     }
 
     form {
@@ -23,7 +24,8 @@
         border: 0.1em solid $colorNegro;
         border-radius: 0.5em;
         padding: 0.3em;
-        margin: 1em 0;
+        margin: 0.5em 0 2em;
+        font-size: 1.1em;
     }
 }
 
@@ -33,13 +35,14 @@
     padding-top: 1em;
 
     h2 {
-        font-size: 2.5em;
+        font-size: 2.75em;
         animation: aparicion 1s;
     }
 }
 
 
 .productos {
+    padding: 5em 0;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +74,7 @@
 
     p {
         padding: 0.2em;
+        font-size: 1.15em;
     }
 
     input {
@@ -78,7 +82,7 @@
         border: 0.1em solid $colorNegro;
         border-radius: 0.5em;
         padding: 0.5em;
-        font-size: 1em;
+        font-size: 1.1em;
         background-color: $colorBotonesOpaco;
     }
 }
@@ -89,18 +93,25 @@
 }
 
 
-
 @media (max-width: 1440px) {
     .barraProductos {
         height: 10em;
 
         p {
             padding: 0.415em;
+            font-size: 1.1em;
+        }
+    
+        input {
+            font-size: 0.95em;
+            margin: 0.5em 0 1.5em;
         }
 
-        input {
-            border-radius: 0.415em;
-            font-size: 0.9em;
+        form {
+            button {
+                font-size: 0.95em;
+                padding: 0.3em 0.7em;
+            }
         }
     }
     
@@ -109,39 +120,38 @@
         padding-top: 0.83em;
 
         h2 {
-            font-size: 2.08em;
+            font-size: 2.25em;
         }
     }
     
     .productos {
-        width: 80%;
-        padding: 3em 0;
+        padding: 5em 0;
     }
     
     .tarjetaProductos {
-        height: 26em;
-        width: 15em;
+        height: 30em;
+        width: 16.5em;
         text-align: center;
         margin: 1.5em 0;
 
         img {
-            width: 13.125em;
+            width: 14.5em;
         }
 
         p {
             padding: 0.166em;
-            font-size: 0.75em;
+            font-size: 0.95em;
         }
 
         input {
             padding: 0.416em;
-            font-size: 0.75em;
+            font-size: 1em;
         }
     }
     
     .precioProductos {
         padding-top: 0.625em;
-        font-size: 1.125em;
+        font-size: 1.3em;
     }
 }
 
@@ -151,17 +161,16 @@
 
         p {
             padding: 0.357em;
-            font-size: 0.71em;
+            font-size: 1em;
         }
 
         input {
-            padding: 0.2em;
-            font-size: 0.71em;
+            font-size: 0.9em;
+            margin: 0.5em 0 1.5em;
         }
     }
     
     .productos {
-        width: 80%;
         padding: 3em 0;
     }
     
@@ -169,13 +178,13 @@
         height: 3.57em;
         padding-top: 0.71em;
         h2 {
-            font-size: 1.78em;
+            font-size: 2em;
         }
     }
     
     .tarjetaProductos {
-        height: 25em;
-        width: 14.25em;
+        height: 27em;
+        width: 15.65em;
         margin: 2em 0;
 
         img {
@@ -184,17 +193,18 @@
 
         p {
             padding: 0.14em;
+            font-size: 0.9em;
         }
 
         input {
             padding: 0.357em;
-            font-size: 0.71em;
+            font-size: 0.95em;
         }
     }
     
     .precioProductos {
         padding-top: 0.53em;
-        font-size: 1.07em;
+        font-size: 1.25em;
     }
 }
 
@@ -204,19 +214,21 @@
 
         p {
             padding: 0.575em;
-            font-size: 1em;
+            font-size: 1.15em;
         }
 
-        input {
-            padding: 0.3em;
-            font-size: 1em;
-            width: 15em;
-            margin: 1em 0;
-        }
-
-        button {
-            padding: 0.75em;
-            font-size: 1em;
+        form {
+            input {
+                padding: 0.3em;
+                font-size: 1.15em;
+                width: 13em;
+                margin: 1em 0;
+            }
+    
+            button {
+                padding: 0.4 0.5em;
+                font-size: 1.15em;
+            }
         }
     }
     
@@ -259,24 +271,27 @@
 
 @media (max-width: 375px) {
     .barraProductos {
-        height: 7.395em;
+        height: 8em;
         padding-bottom: 0.75em;
 
         p {
             padding: 0.3em;
-            font-size: 0.75em;
+            font-size: 0.8em;
+            margin-top: 1em;
         }
 
-        input {
-            padding: 0.3em;
-            font-size: 0.65em;
-            width: 12em;
-            margin: 0 auto;
-        }
-
-        button {
-            padding: 0.5em;
-            font-size: 0.65em;
+        form {
+            input {
+                padding: 0.3em;
+                font-size: 0.75em;
+                width: 12em;
+                margin: 0.5em auto;
+            }
+    
+            button {
+                padding: 0.3 0.4em;
+                font-size: 0.75em;
+            }
         }
     }
     
@@ -328,16 +343,18 @@
             font-size: 0.7em;
         }
 
-        input {
-            padding: 0.3em;
-            font-size: 0.6em;
-            width: 10em;
-            margin: 0 auto;
-        }
-
-        button {
-            padding: 0.5em;
-            font-size: 0.6em;
+        form {
+            input {
+                padding: 0.3em;
+                font-size: 0.675em;
+                width: 12em;
+                margin: 0.5em auto;
+            }
+    
+            button {
+                padding: 0.3 0.4em;
+                font-size: 0.675em;
+            }
         }
     }
     
@@ -346,7 +363,7 @@
         padding-top: 0.4em;
 
         h2 {
-            font-size: 1.15em;
+            font-size: 1.2em;
             padding-top: 0.2em;
         }
     }

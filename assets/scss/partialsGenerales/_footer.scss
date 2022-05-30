@@ -1,13 +1,14 @@
 footer {
-    height: 22.5em;
+    height: 23.5em;
     background-color: $colorPrincipal2;
 
     p {
         color: $colorNegro;
+        font-size: 1.1em;
     }
 
     h4 {
-        font-size: 1.25em;
+        font-size: 1.5em;
 
         a:hover {
             color: $colorVerdeSecundario;
@@ -15,7 +16,7 @@ footer {
     }
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.75em;
         color: $colorNegro;
     }
 
@@ -26,8 +27,12 @@ footer {
     .redes {
         img {
             width: 2em;
-            margin: 0.5em;
+            margin: 1em;
             transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -38,24 +43,24 @@ footer {
 
 @media (max-width: 1440px) {
     footer {
-        height: 20em;
+        height: 21.5em;
 
         p {
-            font-size: 0.85em;
+            font-size: 1em;
         }
 
         h4 {
-            font-size: 1em;
+            font-size: 1.25em;
         }
     
         h3 {
-            font-size: 1.2em;        
+            font-size: 1.4em;        
         }
     
         .redes {
             img {
-                width: 1.5em;
-                margin: 0.375em;
+                width: 1.75em;
+                margin: 0.75em;
                 transition: all 0.3s ease;
             }
         }
@@ -64,23 +69,23 @@ footer {
 
 @media (max-width: 1366px) {
     footer {
-        height: 18.5em;
+        height: 20em;
 
         p {
-            font-size: 0.75em;
+            font-size: 0.95em;
         }
 
         h4 {
-            font-size: 0.95em;
+            font-size: 1.1em;
         }
     
         h3 {
-            font-size: 1.1em;        
+            font-size: 1.25em;        
         }
     
         .redes {
             img {
-                width: 1.4em;
+                width: 1.6em;
                 margin: 0.37em;
                 transition: all 0.3s ease;
             }
@@ -113,6 +118,7 @@ footer {
         .copyright {
             width: 100%;
             height: 1.5em;
+            margin: 1.1em 0;
         }
     }
 
@@ -120,20 +126,24 @@ footer {
 
 @media (max-width: 375px) {
     footer {
-        height: 12.25em;
+        height: 13.6em;
         h3 {
             font-size: 1em;
             padding: 0.6em 0;
         }
 
         p {
-            font-size: 0.6em;
+            font-size: 0.65em;
         }
 
         .redes {
-            img {
-                width: 1.5em;
+            a{
+                margin-right: 0.65em !important;
+                img {
+                    width: 1.5em;
+                }
             }
+            
         }
 
         .copyright {
@@ -145,7 +155,7 @@ footer {
 
 @media (max-width: 320px) {
     footer {
-        height: 10.25em;
+        height: 12em;
         h3 {
             font-size: 0.86em;
             padding: 0.5em 0;
@@ -156,8 +166,11 @@ footer {
         }
 
         .redes {
-            img {
-                width: 1.3em;
+            a {
+                margin-right: 0.55em !important;
+                img {
+                    width: 1.3em;
+                }
             }
         }
 
